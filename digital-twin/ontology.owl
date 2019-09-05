@@ -1,613 +1,504 @@
-<!-- GDigitalTwin represents the graph of knowledge of the person. It gathers all his behavioral data and connects them to represent the individual digital life. -->
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd#"
      xml:base="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd"
+     xmlns:gn="http://www.geonames.org/ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd">
-    <Prefix name="gn" IRI="http://www.geonames.org/ontology#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="schema" IRI="http://schema.org/"/>
-    <Prefix name="GConsent" IRI="https://w3id.org/GConsent#"/>
-    <Prefix name="LConsent" IRI="https://www.datavillage.me/ontologies/LConsent#"/>
-    <Prefix name="SNOMEDCT" IRI="http://purl.bioontology.org/ontology/SNOMEDCT/"/>
-    <Declaration>
-        <Class abbreviatedIRI="schema:Action"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="schema:MoveAction"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="schema:Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="schema:Place"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="gn:GeonamesFeature"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="GConsent:DataSubject"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="GConsent:PersonalData"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="LConsent:DataProvider"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Bike"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Car"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Plane"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Ride"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Run"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Train"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Walk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#dataProvider"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#location"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#potientialAction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#toLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#workLocation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="schema:adress"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="schema:name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="schema:url"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elapseTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elevationGain"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#movingTime"/>
-    </Declaration>
-    <SubClassOf>
-        <Class abbreviatedIRI="schema:Action"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="schema:MoveAction"/>
-        <Class abbreviatedIRI="schema:Action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="schema:Organization"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="schema:Place"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="schema:Place"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="GConsent:DataSubject"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="GConsent:PersonalData"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="LConsent:DataProvider"/>
-        <Class abbreviatedIRI="schema:Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Bike"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Car"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
-        <Class abbreviatedIRI="GConsent:DataSubject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#potientialAction"/>
-            <Class abbreviatedIRI="schema:Action"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#workLocation"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <Class abbreviatedIRI="schema:MoveAction"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
-            <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#toLocation"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <Class abbreviatedIRI="GConsent:PersonalData"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#dataProvider"/>
-            <Class abbreviatedIRI="LConsent:DataProvider"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Plane"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Ride"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Run"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
-        <Class abbreviatedIRI="schema:Action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="https://www.datavillage.me/ontologies/digital-twin#location"/>
-            <Class abbreviatedIRI="gn:GeonamesFeature"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Train"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#Walk"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-    </SubClassOf>
-    <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="schema:adress"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="schema:name"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elapseTime"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elevationGain"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#movingTime"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <FunctionalDataProperty>
-        <DataProperty abbreviatedIRI="schema:adress"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty abbreviatedIRI="schema:name"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty abbreviatedIRI="schema:url"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elapseTime"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elevationGain"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#movingTime"/>
-    </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="schema:adress"/>
-        <Class abbreviatedIRI="schema:Place"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="schema:name"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="schema:url"/>
-        <Class abbreviatedIRI="schema:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elapseTime"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#elevationGain"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="https://www.datavillage.me/ontologies/digital-twin#movingTime"/>
-        <Class IRI="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-    </DataPropertyDomain>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:Action</AbbreviatedIRI>
-        <Literal>Action</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:MoveAction</AbbreviatedIRI>
-        <Literal>MoveAction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
-        <Literal>Organization</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:Place</AbbreviatedIRI>
-        <Literal>Place</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:Thing</AbbreviatedIRI>
-        <Literal>Thing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:adress</AbbreviatedIRI>
-        <Literal>adress</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
-        <Literal>name</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>schema:url</AbbreviatedIRI>
-        <Literal>url</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>gn:GeonamesFeature</AbbreviatedIRI>
-        <Literal>GeonamesFeature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>GConsent:DataSubject</AbbreviatedIRI>
-        <Literal>DataSubject</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>GConsent:PersonalData</AbbreviatedIRI>
-        <Literal>PersonalData</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>LConsent:DataProvider</AbbreviatedIRI>
-        <Literal>DataProvider</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Bike</IRI>
-        <Literal>Bike</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Car</IRI>
-        <Literal>Car</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph</IRI>
-        <Literal>ConsumptionDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#DataOwner</IRI>
-        <Literal>DataOwner</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph</IRI>
-        <Literal>GeospatialDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph</IRI>
-        <Literal>HealthDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph</IRI>
-        <Literal>InterestDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph</IRI>
-        <Literal>KnowledgeDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport</IRI>
-        <Literal>MeanOfTransport</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#MoveByAction</IRI>
-        <Literal>MoveByAction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph</IRI>
-        <Literal>PersonalDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Plane</IRI>
-        <Literal>Plane</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Ride</IRI>
-        <Literal>Ride</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Run</IRI>
-        <Literal>Run</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph</IRI>
-        <Literal>SocialDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#StayAction</IRI>
-        <Literal>StayAction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Train</IRI>
-        <Literal>Train</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#Walk</IRI>
-        <Literal>Walk</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph</IRI>
-        <Literal>WealthDataGraph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#dataProvider</IRI>
-        <Literal>dataProvider</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#elapseTime</IRI>
-        <Literal>elapseTime</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#elevationGain</IRI>
-        <Literal>elevationGain</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#fromLocation</IRI>
-        <Literal>fromLocation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature</IRI>
-        <Literal>hasGeonamesFeature</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#homeLocation</IRI>
-        <Literal>homeLocation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#instrument</IRI>
-        <Literal>instrument</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#location</IRI>
-        <Literal>location</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#movingTime</IRI>
-        <Literal>movingTime</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#potientialAction</IRI>
-        <Literal>potientialAction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#toLocation</IRI>
-        <Literal>toLocation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://www.datavillage.me/ontologies/digital-twin#workLocation</IRI>
-        <Literal>workLocation</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:schema="http://schema.org/"
+     xmlns:GConsent="https://w3id.org/GConsent#"
+     xmlns:LConsent="https://www.datavillage.me/ontologies/LConsent#"
+     xmlns:SNOMEDCT="http://purl.bioontology.org/ontology/SNOMEDCT/">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#dataProvider -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#dataProvider">
+        <rdfs:label>dataProvider</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#fromLocation -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#fromLocation">
+        <rdfs:label>fromLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature">
+        <rdfs:label>hasGeonamesFeature</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#homeLocation -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#homeLocation">
+        <rdfs:label>homeLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#instrument -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#instrument">
+        <rdfs:label>instrument</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#location -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#location">
+        <rdfs:label>location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#potientialAction -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#potientialAction">
+        <rdfs:label>potientialAction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#toLocation -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#toLocation">
+        <rdfs:label>toLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#workLocation -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#workLocation">
+        <rdfs:label>workLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/adress -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/adress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>adress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/url -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/url">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#elapseTime -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elapseTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:label>elapseTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#elevationGain -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elevationGain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:label>elevationGain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#movingTime -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#movingTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:label>movingTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Action -->
+
+    <owl:Class rdf:about="http://schema.org/Action">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/MoveAction -->
+
+    <owl:Class rdf:about="http://schema.org/MoveAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:label>MoveAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+    <owl:Class rdf:about="http://schema.org/Thing">
+        <rdfs:label>Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geonames.org/ontology#GeonamesFeature -->
+
+    <owl:Class rdf:about="http://www.geonames.org/ontology#GeonamesFeature">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>GeonamesFeature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#DataSubject -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataSubject">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>DataSubject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#PersonalData -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#PersonalData">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>PersonalData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataProvider -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataProvider">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:label>DataProvider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Bike -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Bike">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Bike</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Car -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Car">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Car</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>ConsumptionDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#DataOwner -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#DataOwner">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataSubject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#potientialAction"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#workLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>DataOwner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>GeospatialDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>HealthDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>InterestDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>KnowledgeDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>MeanOfTransport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#MoveByAction -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/MoveAction"/>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#toLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>MoveByAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#PersonalData"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#dataProvider"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProvider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>PersonalDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Plane -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Plane">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Plane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Ride -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Ride">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Ride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Run -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Run">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Run</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>SocialDataGraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#StayAction -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#StayAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#location"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>StayAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Train -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Train">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Train</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Walk -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Walk">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+        <rdfs:label>Walk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:label>WealthDataGraph</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
 
 
 

@@ -1,3 +1,4 @@
+<!-- GDigitalTwin represents the graph of knowledge of the person. It gathers all his behavioral data and connects them to represent the individual digital life. -->
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd"

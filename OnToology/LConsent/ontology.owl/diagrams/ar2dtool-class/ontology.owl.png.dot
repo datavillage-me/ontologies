@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "GConsent:Status" "GConsent:Processing" "https://www.datavillage.me/ontologies/LConsent#DataManager" "schema:Organization" "https://www.datavillage.me/ontologies/LConsent#DataProcessor" "GConsent:Purpose" "https://www.datavillage.me/ontologies/LConsent#DataProvider" "GConsent:DataController" "time:TemporalEntity" "GConsent:PersonalData" "https://www.datavillage.me/ontologies/LConsent#ConsentReceipt" "time:Instant" "GConsent:Medium" ; /*classes style*/
+	"NULL" -> "GConsent:DataController" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#forPurpose" [ label = "owl:onProperty" ];
+	"NULL" -> "GConsent:Status" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#hasStatus" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#DataManager" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#hasExpiry" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#forProcessing" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#DataProcessor" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#createdBy" [ label = "owl:onProperty" ];
+	"NULL" -> "time:Instant" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#isUser" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#ConsentReceipt" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt" [ label = "owl:onProperty" ];
+	"NULL" -> "schema:Organization" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#basedOn" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#forPersonalData" [ label = "owl:onProperty" ];
+	"NULL" -> "GConsent:Medium" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#isProvidedTo" [ label = "owl:onProperty" ];
+	"NULL" -> "GConsent:PersonalData" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "time:TemporalEntity" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "GConsent:Processing" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#DataProvider" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#atTime" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/LConsent#hasMedium" [ label = "owl:onProperty" ];
+	"NULL" -> "GConsent:Purpose" [ label = "owl:someValuesFrom" ];
+
+}

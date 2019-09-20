@@ -1,5 +1,21 @@
 {
   "@context" : {
+    "DataMapping" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#DataMapping"
+    },
+    "juridiction" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#juridiction",
+      "@type" : "@id"
+    },
+    "Social" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Social"
+    },
+    "url" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#url"
+    },
+    "Asset" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Asset"
+    },
     "forPurpose" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#forPurpose",
       "@type" : "@id"
@@ -7,11 +23,17 @@
     "DataOrganisation" : {
       "@id" : "https://w3id.org/GConsent#DataOrganisation"
     },
+    "Health" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Health"
+    },
     "Organization" : {
       "@id" : "http://schema.org/Organization"
     },
     "Thing" : {
       "@id" : "http://schema.org/Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
     "DataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProvider"
@@ -26,6 +48,14 @@
     "DataManager" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataManager"
     },
+    "createdAt" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#createdAt",
+      "@type" : "@id"
+    },
+    "isGivenBy" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#isGivenBy",
+      "@type" : "@id"
+    },
     "ThirdParty" : {
       "@id" : "https://w3id.org/GConsent#ThirdParty"
     },
@@ -35,6 +65,9 @@
     "Medium" : {
       "@id" : "https://w3id.org/GConsent#Medium"
     },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -42,8 +75,11 @@
       "@id" : "https://www.datavillage.me/ontologies/LConsent#hasMedium",
       "@type" : "@id"
     },
-    "DataStructuring" : {
-      "@id" : "https://w3id.org/GConsent#DataStructuring"
+    "mapper" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#mapper"
+    },
+    "Interest" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Interest"
     },
     "defineConsentReceipt" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt",
@@ -56,9 +92,36 @@
     "Status" : {
       "@id" : "https://w3id.org/GConsent#Status"
     },
+    "Knowledge" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Knowledge"
+    },
+    "hasDuration" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasDuration",
+      "@type" : "@id"
+    },
+    "Geospatial" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Geospatial"
+    },
+    "dataProcessor" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#dataProcessor",
+      "@type" : "@id"
+    },
+    "DataSharing" : {
+      "@id" : "https://w3id.org/GConsent#DataSharing"
+    },
+    "hasConsentReceipt" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasConsentReceipt",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#name"
+    },
     "isUser" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#isUser",
       "@type" : "@id"
+    },
+    "ExternalData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ExternalData"
     },
     "DataProcessor" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProcessor"
@@ -80,42 +143,75 @@
     "DataSubject" : {
       "@id" : "https://w3id.org/GConsent#DataSubject"
     },
-    "hasExpiry" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasExpiry",
-      "@type" : "@id"
-    },
     "Purpose" : {
       "@id" : "https://w3id.org/GConsent#Purpose"
     },
     "PersonalDataGraph" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
     },
+    "DataStore" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#DataStore"
+    },
     "Processing" : {
       "@id" : "https://w3id.org/GConsent#Processing"
+    },
+    "source" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#source",
+      "@type" : "@id"
+    },
+    "juridication" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#juridication",
+      "@type" : "@id"
     },
     "DataController" : {
       "@id" : "https://w3id.org/GConsent#DataController"
     },
+    "PersonalDataCategory" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
+    },
     "PersonalData" : {
       "@id" : "https://w3id.org/GConsent#PersonalData"
+    },
+    "ExternalDataSource" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#ExternalDataSource"
     },
     "isProvidedTo" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#isProvidedTo",
       "@type" : "@id"
     },
+    "dataController" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#dataController",
+      "@type" : "@id"
+    },
     "DataUse" : {
       "@id" : "https://w3id.org/GConsent#DataUse"
+    },
+    "ITSME" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#ITSME"
+    },
+    "category" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#category",
+      "@type" : "@id"
+    },
+    "Financial" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Financial"
     },
     "forPersonalData" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#forPersonalData",
       "@type" : "@id"
+    },
+    "WebFormHTML" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#WebFormHTML"
+    },
+    "description" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#description"
     },
     "atTime" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#atTime",
       "@type" : "@id"
     },
     "Consent" : {
-      "@id" : "https://w3id.org/GConsent#Consent"
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Consent"
     },
     "ConsentReceipt" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"

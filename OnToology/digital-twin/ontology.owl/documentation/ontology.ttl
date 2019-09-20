@@ -12,6 +12,11 @@
 #    Object Properties
 #################################################################
 
+###  https://www.datavillage.me/ontologies/digital-twin#category
+<https://www.datavillage.me/ontologies/digital-twin#category> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "category" .
+
+
 ###  https://www.datavillage.me/ontologies/digital-twin#dataProvider
 <https://www.datavillage.me/ontologies/digital-twin#dataProvider> rdf:type owl:ObjectProperty ;
                                                                   rdfs:label "dataProvider" .
@@ -42,9 +47,19 @@
                                                               rdfs:label "location" .
 
 
+###  https://www.datavillage.me/ontologies/digital-twin#personalDataType
+<https://www.datavillage.me/ontologies/digital-twin#personalDataType> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:label "personalDataType" .
+
+
 ###  https://www.datavillage.me/ontologies/digital-twin#potientialAction
 <https://www.datavillage.me/ontologies/digital-twin#potientialAction> rdf:type owl:ObjectProperty ;
                                                                       rdfs:label "potientialAction" .
+
+
+###  https://www.datavillage.me/ontologies/digital-twin#source
+<https://www.datavillage.me/ontologies/digital-twin#source> rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "source" .
 
 
 ###  https://www.datavillage.me/ontologies/digital-twin#toLocation
@@ -65,7 +80,6 @@
 <http://schema.org/adress> rdf:type owl:DatatypeProperty ;
                            rdfs:subPropertyOf owl:topDataProperty ;
                            rdf:type owl:FunctionalProperty ;
-                           rdfs:domain <http://schema.org/Place> ;
                            rdfs:label "adress" .
 
 
@@ -134,25 +148,20 @@ owl:topDataProperty rdfs:domain owl:Thing .
                                  rdfs:label "Organization" .
 
 
-###  http://schema.org/Place
-<http://schema.org/Place> rdf:type owl:Class ;
-                          rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph> ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature> ;
-                                            owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
-                                          ] ;
-                          rdfs:label "Place" .
-
-
 ###  http://schema.org/Thing
 <http://schema.org/Thing> rdf:type owl:Class ;
                           rdfs:label "Thing" .
 
 
-###  http://www.geonames.org/ontology#GeonamesFeature
-<http://www.geonames.org/ontology#GeonamesFeature> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://schema.org/Thing> ;
-                                                   rdfs:label "GeonamesFeature" .
+###  http://semweb.mmlab.be/ns/rml#source
+<http://semweb.mmlab.be/ns/rml#source> rdf:type owl:Class ;
+                                       rdfs:label "source" .
+
+
+###  http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://schema.org/Thing> ;
+                                           rdfs:label "Feature" .
 
 
 ###  https://w3id.org/GConsent#DataSubject
@@ -173,6 +182,18 @@ owl:topDataProperty rdfs:domain owl:Thing .
                                                               rdfs:label "DataProvider" .
 
 
+###  https://www.datavillage.me/ontologies/LConsent#Geospatial
+<https://www.datavillage.me/ontologies/LConsent#Geospatial> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> ;
+                                                            rdfs:label "Geospatial" .
+
+
+###  https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory
+<https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://schema.org/Thing> ;
+                                                                      rdfs:label "PersonalDataCategory" .
+
+
 ###  https://www.datavillage.me/ontologies/digital-twin#Bike
 <https://www.datavillage.me/ontologies/digital-twin#Bike> rdf:type owl:Class ;
                                                           rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> ;
@@ -185,18 +206,12 @@ owl:topDataProperty rdfs:domain owl:Thing .
                                                          rdfs:label "Car" .
 
 
-###  https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                          rdfs:label "ConsumptionDataGraph" .
-
-
 ###  https://www.datavillage.me/ontologies/digital-twin#DataOwner
 <https://www.datavillage.me/ontologies/digital-twin#DataOwner> rdf:type owl:Class ;
                                                                rdfs:subClassOf <https://w3id.org/GConsent#DataSubject> ,
                                                                                [ rdf:type owl:Restriction ;
                                                                                  owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#homeLocation> ;
-                                                                                 owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
+                                                                                 owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                                                                                ] ,
                                                                                [ rdf:type owl:Restriction ;
                                                                                  owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#potientialAction> ;
@@ -204,33 +219,9 @@ owl:topDataProperty rdfs:domain owl:Thing .
                                                                                ] ,
                                                                                [ rdf:type owl:Restriction ;
                                                                                  owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#workLocation> ;
-                                                                                 owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
+                                                                                 owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                                                                                ] ;
                                                                rdfs:label "DataOwner" .
-
-
-###  https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                         rdfs:label "GeospatialDataGraph" .
-
-
-###  https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                     rdfs:label "HealthDataGraph" .
-
-
-###  https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph> rdf:type owl:Class ;
-                                                                       rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                       rdfs:label "InterestDataGraph" .
-
-
-###  https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                        rdfs:label "KnowledgeDataGraph" .
 
 
 ###  https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport
@@ -242,18 +233,14 @@ owl:topDataProperty rdfs:domain owl:Thing .
 ###  https://www.datavillage.me/ontologies/digital-twin#MoveByAction
 <https://www.datavillage.me/ontologies/digital-twin#MoveByAction> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://schema.org/MoveAction> ,
-                                                                                  <https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph> ,
+                                                                                  <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#category> ;
+                                                                                    owl:someValuesFrom <https://www.datavillage.me/ontologies/LConsent#Geospatial>
+                                                                                  ] ,
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#fromLocation> ;
-                                                                                    owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
-                                                                                  ] ,
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#instrument> ;
-                                                                                    owl:someValuesFrom <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport>
-                                                                                  ] ,
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#toLocation> ;
-                                                                                    owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
+                                                                                    owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                                                                                   ] ;
                                                                   rdfs:label "MoveByAction" .
 
@@ -286,19 +273,17 @@ owl:topDataProperty rdfs:domain owl:Thing .
                                                          rdfs:label "Run" .
 
 
-###  https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                     rdfs:label "SocialDataGraph" .
-
-
 ###  https://www.datavillage.me/ontologies/digital-twin#StayAction
 <https://www.datavillage.me/ontologies/digital-twin#StayAction> rdf:type owl:Class ;
                                                                 rdfs:subClassOf <http://schema.org/Action> ,
-                                                                                <https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph> ,
+                                                                                <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#category> ;
+                                                                                  owl:someValuesFrom <https://www.datavillage.me/ontologies/LConsent#Geospatial>
+                                                                                ] ,
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <https://www.datavillage.me/ontologies/digital-twin#location> ;
-                                                                                  owl:someValuesFrom <http://www.geonames.org/ontology#GeonamesFeature>
+                                                                                  owl:someValuesFrom <http://www.geonames.org/ontology#Feature>
                                                                                 ] ;
                                                                 rdfs:label "StayAction" .
 
@@ -313,12 +298,6 @@ owl:topDataProperty rdfs:domain owl:Thing .
 <https://www.datavillage.me/ontologies/digital-twin#Walk> rdf:type owl:Class ;
                                                           rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> ;
                                                           rdfs:label "Walk" .
-
-
-###  https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph
-<https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> ;
-                                                                     rdfs:label "WealthDataGraph" .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

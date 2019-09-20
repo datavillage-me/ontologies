@@ -1,17 +1,19 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd#"
-     xml:base="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd"
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/H1KaRsgM6K9MMeugwQhnR#"
+     xml:base="http://webprotege.stanford.edu/project/H1KaRsgM6K9MMeugwQhnR"
+     xmlns:dt="https://www.datavillage.me/ontologies/digital-twin#"
      xmlns:gn="http://www.geonames.org/ontology#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rml="http://semweb.mmlab.be/ns/rml#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
      xmlns:schema="http://schema.org/"
-     xmlns:GConsent="https://w3id.org/GConsent#"
-     xmlns:LConsent="https://www.datavillage.me/ontologies/LConsent#">
-    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd"/>
+     xmlns:GConsent="https://w3id.org/GConsent#">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/H1KaRsgM6K9MMeugwQhnR"/>
     
 
 
@@ -26,90 +28,170 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#dataProvider -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#atTime -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#dataProvider">
-        <rdfs:label>dataProvider</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#atTime">
+        <rdfs:label>atTime</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#fromLocation -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#basedOn -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#fromLocation">
-        <rdfs:label>fromLocation</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#basedOn">
+        <rdfs:label>basedOn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#category -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature">
-        <rdfs:label>hasGeonamesFeature</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#category">
+        <rdfs:label>category</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#homeLocation -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#createdAt -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#homeLocation">
-        <rdfs:label>homeLocation</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#createdAt">
+        <rdfs:label>createdAt</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#instrument -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#createdBy -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#instrument">
-        <rdfs:label>instrument</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#createdBy">
+        <rdfs:label>createdBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#location -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#dataController -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#location">
-        <rdfs:label>location</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#dataController">
+        <rdfs:label>dataController</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#personalDataType -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#dataProcessor -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#personalDataType">
-        <rdfs:label>personalDataType</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#dataProcessor">
+        <rdfs:label>dataProcessor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#potientialAction -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#potientialAction">
-        <rdfs:label>potientialAction</rdfs:label>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt">
+        <rdfs:label>defineConsentReceipt</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#source -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#forPersonalData -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#source">
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#forPersonalData">
+        <rdfs:label>forPersonalData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#forProcessing -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#forProcessing">
+        <rdfs:label>forProcessing</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#forPurpose -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#forPurpose">
+        <rdfs:label>forPurpose</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#hasConsentReceipt -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasConsentReceipt">
+        <rdfs:label>hasConsentReceipt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#hasDuration -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasDuration">
+        <rdfs:label>hasDuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#hasMedium -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasMedium">
+        <rdfs:label>hasMedium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasStatus">
+        <rdfs:label>hasStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#isGivenBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#isGivenBy">
+        <rdfs:label>isGivenBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#isProvidedTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#isProvidedTo">
+        <rdfs:label>isProvidedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#isUser -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#isUser">
+        <rdfs:label>isUser</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#juridication -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#juridication">
+        <rdfs:label>juridication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#juridiction -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#juridiction">
+        <rdfs:label>juridiction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#source -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#source">
         <rdfs:label>source</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#toLocation -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#toLocation">
-        <rdfs:label>toLocation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#workLocation -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#workLocation">
-        <rdfs:label>workLocation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,75 +207,44 @@
     
 
 
-    <!-- http://schema.org/adress -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#description -->
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/adress">
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#description">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/Place"/>
-        <rdfs:label>adress</rdfs:label>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
+        <rdfs:label>description</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/name -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#mapper -->
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/name">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#mapper">
+        <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataMapping"/>
+        <rdfs:label>mapper</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#name -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#name">
+        <rdfs:domain rdf:resource="https://w3id.org/GConsent#DataController"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
         <rdfs:label>name</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://schema.org/url -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#url -->
 
-    <owl:DatatypeProperty rdf:about="http://schema.org/url">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/Thing"/>
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/GConsent#DataController"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
         <rdfs:label>url</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#elapseTime -->
-
-    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elapseTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <rdfs:label>elapseTime</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#elevationGain -->
-
-    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elevationGain">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <rdfs:label>elevationGain</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#movingTime -->
-
-    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#movingTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
-        <rdfs:label>movingTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -209,44 +260,11 @@
     
 
 
-    <!-- http://schema.org/Action -->
-
-    <owl:Class rdf:about="http://schema.org/Action">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
-        <rdfs:label>Action</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/MoveAction -->
-
-    <owl:Class rdf:about="http://schema.org/MoveAction">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
-        <rdfs:label>MoveAction</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://schema.org/Organization -->
 
     <owl:Class rdf:about="http://schema.org/Organization">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
         <rdfs:label>Organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://schema.org/Place -->
-
-    <owl:Class rdf:about="http://schema.org/Place">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>Place</rdfs:label>
     </owl:Class>
     
 
@@ -267,11 +285,85 @@
     
 
 
-    <!-- http://www.geonames.org/ontology#GeonamesFeature -->
+    <!-- http://www.geonames.org/ontology#Feature -->
 
-    <owl:Class rdf:about="http://www.geonames.org/ontology#GeonamesFeature">
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
-        <rdfs:label>GeonamesFeature</rdfs:label>
+        <rdfs:label>Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:label>Instant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:label>TemporalEntity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#Consent -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#Consent">
+        <rdfs:label>Consent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#DataCombination -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataCombination">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Processing"/>
+        <rdfs:label>DataCombination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#DataController -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataController">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:label>DataController</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#DataOrganisation -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataOrganisation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Processing"/>
+        <rdfs:label>DataOrganisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#DataSharing -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataSharing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Processing"/>
+        <rdfs:label>DataSharing</rdfs:label>
     </owl:Class>
     
 
@@ -285,6 +377,23 @@
     
 
 
+    <!-- https://w3id.org/GConsent#DataUse -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#DataUse">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Processing"/>
+        <rdfs:label>DataUse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#Medium -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#Medium">
+        <rdfs:label>Medium</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/GConsent#PersonalData -->
 
     <owl:Class rdf:about="https://w3id.org/GConsent#PersonalData">
@@ -294,62 +403,186 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/LConsent#DataProvider -->
+    <!-- https://w3id.org/GConsent#Processing -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataProvider">
+    <owl:Class rdf:about="https://w3id.org/GConsent#Processing">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#dataProcessor"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#Purpose -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#Purpose">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#Status -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#Status">
+        <rdfs:label>Status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/GConsent#ThirdParty -->
+
+    <owl:Class rdf:about="https://w3id.org/GConsent#ThirdParty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:label>ThirdParty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#Asset -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Asset">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#Consent -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Consent">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Consent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasConsentReceipt"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#Instant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasStatus"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Status"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#isGivenBy"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataOwner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Consent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#ConsentReceipt -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#createdAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#createdBy"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#forPersonalData"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#PersonalData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#forProcessing"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Processing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#forPurpose"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Purpose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasMedium"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#juridiction"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ConsentReceipt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataManager -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataManager">
         <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
-        <rdfs:label>DataProvider</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataController"/>
+        <rdfs:label>DataManager</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Bike -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataMapping -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Bike">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Bike</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataOrganisation"/>
+        <rdfs:label>DataMapping</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Car -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataOwner -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Car">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Car</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#ConsumptionData -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#ConsumptionData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>ConsumptionData</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#DataOwner -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#DataOwner">
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataOwner">
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataSubject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#isUser"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataManager"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#potientialAction"/>
-                <owl:someValuesFrom rdf:resource="http://schema.org/Action"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#isUser"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#workLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#isUser"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProvider"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>DataOwner</rdfs:label>
@@ -357,91 +590,133 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#ExternalData -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataProcessor -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#ExternalData">
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataProcessor">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#ThirdParty"/>
+        <rdfs:label>DataProcessor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataProvider -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataProvider">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataController"/>
+        <rdfs:label>DataProvider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#DataStore -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataStore">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Processing"/>
+        <rdfs:label>DataStore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#ExternalDataSource -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#ExternalDataSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#PersonalData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#source"/>
-                <owl:someValuesFrom rdf:resource="http://semweb.mmlab.be/ns/rml#source"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#dataController"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProvider"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>ExternalData</rdfs:label>
+        <rdfs:label>ExternalDataSource</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#GeospatialData -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#Financial -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#GeospatialData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>GeospatialData</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Financial">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Financial</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#HealthData -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#Geospatial -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#HealthData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>HealthData</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Geospatial">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Geospatial</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#InterestData -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#Health -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#InterestData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>InterestData</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Health">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Health</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#KnowledgeData -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#ITSME -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#KnowledgeData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>KnowledgeData</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#ITSME">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Medium"/>
+        <rdfs:label>ITSME</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#Interest -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Interest">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#Knowledge -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Knowledge">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
-        <rdfs:label>MeanOfTransport</rdfs:label>
+        <rdfs:label>PersonalDataCategory</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#MoveByAction -->
+    <!-- https://www.datavillage.me/ontologies/LConsent#Social -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">
-        <rdfs:subClassOf rdf:resource="http://schema.org/MoveAction"/>
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
-                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#toLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>MoveByAction</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Social">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Social</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/LConsent#WebFormHTML -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#WebFormHTML">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Medium"/>
+        <rdfs:label>WebFormHTML</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#ExternalData -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#ExternalData"/>
     
 
 
@@ -451,90 +726,11 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#PersonalData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#dataProvider"/>
-                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProvider"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#dataController"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataManager"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>PersonalDataGraph</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Plane -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Plane">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Plane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Ride -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Ride">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Ride</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Run -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Run">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Run</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#SocialData -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#SocialData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>SocialData</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#StayAction -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#StayAction">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#location"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#GeonamesFeature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>StayAction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Train -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Train">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Train</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Walk -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Walk">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Walk</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#WealthData -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#WealthData">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:label>WealthData</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

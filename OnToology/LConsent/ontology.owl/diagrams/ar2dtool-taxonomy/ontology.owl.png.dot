@@ -1,27 +1,36 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "GConsent:DataSubject" "GConsent:Consent" "GConsent:Processing" "GConsent:ThirdParty" "https://www.datavillage.me/ontologies/LConsent#DataManager" "schema:Organization" "https://www.datavillage.me/ontologies/LConsent#DataProcessor" "GConsent:Purpose" "https://www.datavillage.me/ontologies/LConsent#DataProvider" "GConsent:DataUse" "https://www.datavillage.me/ontologies/LConsent#DataOwner" "GConsent:DataController" "GConsent:DataCombination" "prov:Organization" "schema:Thing" "GConsent:PersonalData" "GConsent:DataStructuring" "dt:PersonalDataGraph" "GConsent:DataOrganisation" "https://www.datavillage.me/ontologies/LConsent#ConsentReceipt" ; /*classes style*/
-	"https://www.datavillage.me/ontologies/LConsent#DataProvider" -> "GConsent:DataController" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataProvider" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataOwner" -> "GConsent:DataSubject" [ label = "rdfs:subClassOf" ];
-	"GConsent:Processing" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
-	"GConsent:ThirdParty" -> "prov:Organization" [ label = "rdfs:subClassOf" ];
-	"GConsent:DataUse" -> "GConsent:Processing" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#ConsentReceipt" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataManager" -> "GConsent:DataController" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataManager" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "https://www.datavillage.me/ontologies/digital-twin#StayAction" "GConsent:DataSubject" "https://www.datavillage.me/ontologies/digital-twin#WealthData" "https://www.datavillage.me/ontologies/digital-twin#MoveByAction" "https://www.datavillage.me/ontologies/digital-twin#InterestData" "https://www.datavillage.me/ontologies/digital-twin#Plane" "https://www.datavillage.me/ontologies/digital-twin#HealthData" "https://www.datavillage.me/ontologies/digital-twin#Run" "https://www.datavillage.me/ontologies/digital-twin#Bike" "https://www.datavillage.me/ontologies/digital-twin#KnowledgeData" "https://www.datavillage.me/ontologies/digital-twin#Walk" "schema:MoveAction" "gn:GeonamesFeature" "schema:Organization" "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData" "schema:Action" "https://www.datavillage.me/ontologies/digital-twin#GeospatialData" "https://www.datavillage.me/ontologies/digital-twin#ExternalData" "LConsent:DataProvider" "https://www.datavillage.me/ontologies/digital-twin#SocialData" "https://www.datavillage.me/ontologies/digital-twin#Car" "schema:Thing" "https://www.datavillage.me/ontologies/digital-twin#Train" "GConsent:PersonalData" "https://www.datavillage.me/ontologies/digital-twin#Ride" "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" "https://www.datavillage.me/ontologies/digital-twin#DataOwner" "schema:Place" ; /*classes style*/
+	"https://www.datavillage.me/ontologies/digital-twin#WealthData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#HealthData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Plane" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"schema:Action" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#SocialData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Run" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#DataOwner" -> "GConsent:DataSubject" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Ride" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"LConsent:DataProvider" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
+	"schema:MoveAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
+	"gn:GeonamesFeature" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#ExternalData" -> "GConsent:PersonalData" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#MoveByAction" -> "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#MoveByAction" -> "schema:MoveAction" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#GeospatialData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#StayAction" -> "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#StayAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
 	"schema:Organization" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
-	"GConsent:DataCombination" -> "GConsent:Processing" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataProcessor" -> "GConsent:ThirdParty" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/LConsent#DataProcessor" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
-	"GConsent:DataController" -> "prov:Organization" [ label = "rdfs:subClassOf" ];
-	"dt:PersonalDataGraph" -> "GConsent:PersonalData" [ label = "rdfs:subClassOf" ];
-	"GConsent:Consent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"GConsent:DataStructuring" -> "GConsent:Processing" [ label = "rdfs:subClassOf" ];
-	"GConsent:Purpose" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Car" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" -> "GConsent:PersonalData" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#ConsumptionData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#KnowledgeData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#InterestData" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
 	"GConsent:PersonalData" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"GConsent:DataSubject" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
-	"GConsent:DataOrganisation" -> "GConsent:Processing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Bike" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Train" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"schema:Place" -> "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Walk" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
 
 }

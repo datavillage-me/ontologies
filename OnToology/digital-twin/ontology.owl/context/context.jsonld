@@ -1,13 +1,13 @@
 {
   "@context" : {
-    "KnowledgeDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph"
-    },
     "MoveAction" : {
       "@id" : "http://schema.org/MoveAction"
     },
     "Run" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Run"
+    },
+    "InterestData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#InterestData"
     },
     "Ride" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Ride"
@@ -19,11 +19,11 @@
     "url" : {
       "@id" : "http://schema.org/url"
     },
-    "SocialDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph"
-    },
     "Organization" : {
       "@id" : "http://schema.org/Organization"
+    },
+    "ConsumptionData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"
     },
     "Thing" : {
       "@id" : "http://schema.org/Thing"
@@ -34,12 +34,12 @@
     "DataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProvider"
     },
-    "ConsumptionDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph"
-    },
     "dataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#dataProvider",
       "@type" : "@id"
+    },
+    "WealthData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#WealthData"
     },
     "GeonamesFeature" : {
       "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
@@ -50,11 +50,8 @@
     "movingTime" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#movingTime"
     },
-    "WealthDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph"
-    },
-    "HealthDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph"
+    "KnowledgeData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeData"
     },
     "name" : {
       "@id" : "http://schema.org/name"
@@ -62,6 +59,9 @@
     "toLocation" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#toLocation",
       "@type" : "@id"
+    },
+    "ExternalData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ExternalData"
     },
     "potientialAction" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#potientialAction",
@@ -97,14 +97,31 @@
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#instrument",
       "@type" : "@id"
     },
+    "SocialData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#SocialData"
+    },
     "PersonalDataGraph" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
+    },
+    "personalDataType" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#personalDataType",
+      "@type" : "@id"
     },
     "Train" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Train"
     },
+    "source" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#source",
+      "@type" : "@id"
+    },
     "PersonalData" : {
       "@id" : "https://w3id.org/GConsent#PersonalData"
+    },
+    "GeospatialData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialData"
+    },
+    "HealthData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#HealthData"
     },
     "homeLocation" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#homeLocation",
@@ -119,9 +136,6 @@
     },
     "MoveByAction" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-    },
-    "InterestDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph"
     },
     "Action" : {
       "@id" : "http://schema.org/Action"
@@ -140,9 +154,6 @@
     },
     "StayAction" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#StayAction"
-    },
-    "GeospatialDataGraph" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"
     }
   }
 }

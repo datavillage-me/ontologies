@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="25" parse.nodes="24" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="27" parse.nodes="26" parse.order="free">
       <node id="nid_schema:name">
          <data key="d0">
             <y:ShapeNode>
@@ -237,6 +237,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_rml:source">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="100.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">rml:source</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:someValuesFrom9" source="nid_NULL" target="nid_rml:source">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:someValuesFrom</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_gn:GeonamesFeature">
          <data key="d0">
             <y:ShapeNode>
@@ -249,7 +272,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom9" source="nid_NULL" target="nid_gn:GeonamesFeature">
+    <edge id="eid_owl:someValuesFrom10" source="nid_NULL" target="nid_gn:GeonamesFeature">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -272,7 +295,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty10" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#homeLocation">
+    <edge id="eid_owl:onProperty11" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#homeLocation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -295,7 +318,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty11" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#instrument">
+    <edge id="eid_owl:onProperty12" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#instrument">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -318,7 +341,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty12" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#dataProvider">
+    <edge id="eid_owl:onProperty13" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#dataProvider">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -341,7 +364,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom13" source="nid_NULL" target="nid_schema:Action">
+    <edge id="eid_owl:someValuesFrom14" source="nid_NULL" target="nid_schema:Action">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -364,7 +387,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty14" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#potientialAction">
+    <edge id="eid_owl:onProperty15" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#potientialAction">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_https://www.datavillage.me/ontologies/digital-twin#source">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="570.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://www.datavillage.me/ontologies/digital-twin#source</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:onProperty16" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#source">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -387,7 +433,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom15" source="nid_NULL" target="nid_LConsent:DataProvider">
+    <edge id="eid_owl:someValuesFrom17" source="nid_NULL" target="nid_LConsent:DataProvider">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -410,7 +456,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:someValuesFrom16" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
+    <edge id="eid_owl:someValuesFrom18" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -433,7 +479,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty17" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#fromLocation">
+    <edge id="eid_owl:onProperty19" source="nid_NULL" target="nid_https://www.datavillage.me/ontologies/digital-twin#fromLocation">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -468,7 +514,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#movingTime18" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
+    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#movingTime20" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -491,7 +537,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_schema:name19" source="nid_schema:Thing" target="nid_owl:Thing">
+    <edge id="eid_schema:name21" source="nid_schema:Thing" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -502,7 +548,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#elevationGain20" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
+    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#elevationGain22" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -513,7 +559,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#elapseTime21" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
+    <edge id="eid_https://www.datavillage.me/ontologies/digital-twin#elapseTime23" source="nid_https://www.datavillage.me/ontologies/digital-twin#MoveByAction" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -524,7 +570,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:topDataProperty22" source="nid_owl:Thing" target="nid_owl:Thing">
+    <edge id="eid_owl:topDataProperty24" source="nid_owl:Thing" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -535,7 +581,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_schema:url23" source="nid_schema:Thing" target="nid_owl:Thing">
+    <edge id="eid_schema:url25" source="nid_schema:Thing" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -558,7 +604,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_schema:adress24" source="nid_schema:Place" target="nid_owl:Thing">
+    <edge id="eid_schema:adress26" source="nid_schema:Place" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

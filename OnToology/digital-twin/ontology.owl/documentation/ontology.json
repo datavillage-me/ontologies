@@ -8,6 +8,15 @@
     "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
   } ]
 }, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.datavillage.me/ontologies/digital-twin#location"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
+  } ]
+}, {
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -38,13 +47,22 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.datavillage.me/ontologies/digital-twin#source"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semweb.mmlab.be/ns/rml#source"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#fromLocation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#instrument"
@@ -53,7 +71,7 @@
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#toLocation"
@@ -62,22 +80,13 @@
     "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#dataProvider"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProvider"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://www.datavillage.me/ontologies/digital-twin#location"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
   } ]
 }, {
   "@id" : "http://schema.org/Action",
@@ -113,7 +122,7 @@
     "@value" : "Place"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"
+    "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"
   }, {
     "@id" : "_:genid1"
   } ]
@@ -155,6 +164,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "url"
+  } ]
+}, {
+  "@id" : "http://semweb.mmlab.be/ns/rml#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source"
   } ]
 }, {
   "@id" : "http://webprotege.stanford.edu/project/Dw56jrudrpgUGMgpU9ulEd",
@@ -219,10 +234,10 @@
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ConsumptionDataGraph"
+    "@value" : "ConsumptionData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
@@ -243,37 +258,48 @@
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#ExternalData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "GeospatialDataGraph"
+    "@value" : "ExternalData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/GConsent#PersonalData"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GeospatialData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#HealthDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#HealthData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "HealthDataGraph"
+    "@value" : "HealthData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#InterestDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#InterestData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "InterestDataGraph"
+    "@value" : "InterestData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "KnowledgeDataGraph"
+    "@value" : "KnowledgeData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
@@ -296,13 +322,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/MoveAction"
   }, {
-    "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"
-  }, {
-    "@id" : "_:genid5"
+    "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"
   }, {
     "@id" : "_:genid6"
   }, {
     "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph",
@@ -313,7 +339,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/GConsent#PersonalData"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "https://www.datavillage.me/ontologies/digital-twin#Plane",
@@ -343,10 +369,10 @@
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#SocialDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#SocialData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SocialDataGraph"
+    "@value" : "SocialData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
@@ -360,9 +386,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Action"
   }, {
-    "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialDataGraph"
+    "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "https://www.datavillage.me/ontologies/digital-twin#Train",
@@ -383,10 +409,10 @@
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
   } ]
 }, {
-  "@id" : "https://www.datavillage.me/ontologies/digital-twin#WealthDataGraph",
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#WealthData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "WealthDataGraph"
+    "@value" : "WealthData"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
@@ -464,10 +490,22 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#personalDataType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "personalDataType"
+  } ]
+}, {
   "@id" : "https://www.datavillage.me/ontologies/digital-twin#potientialAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "potientialAction"
+  } ]
+}, {
+  "@id" : "https://www.datavillage.me/ontologies/digital-twin#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source"
   } ]
 }, {
   "@id" : "https://www.datavillage.me/ontologies/digital-twin#toLocation",

@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "https://www.datavillage.me/ontologies/digital-twin#MoveByAction" "gn:GeonamesFeature" "schema:Action" "LConsent:DataProvider" "schema:Thing" "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" "schema:Place" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "https://www.datavillage.me/ontologies/digital-twin#MoveByAction" "rml:source" "gn:GeonamesFeature" "schema:Action" "LConsent:DataProvider" "schema:Thing" "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" "schema:Place" ; /*classes style*/
 	"schema:name" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"schema:adress" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#movingTime" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -11,12 +11,14 @@ node [shape = rectangle, color="orange"]; "https://www.datavillage.me/ontologies
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#toLocation" [ label = "owl:onProperty" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#location" [ label = "owl:onProperty" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature" [ label = "owl:onProperty" ];
+	"NULL" -> "rml:source" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "gn:GeonamesFeature" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#homeLocation" [ label = "owl:onProperty" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#instrument" [ label = "owl:onProperty" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#dataProvider" [ label = "owl:onProperty" ];
 	"NULL" -> "schema:Action" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#potientialAction" [ label = "owl:onProperty" ];
+	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#source" [ label = "owl:onProperty" ];
 	"NULL" -> "LConsent:DataProvider" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "https://www.datavillage.me/ontologies/digital-twin#fromLocation" [ label = "owl:onProperty" ];

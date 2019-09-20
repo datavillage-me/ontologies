@@ -1,124 +1,159 @@
 {
   "@context" : {
-    "forPurpose" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#forPurpose",
+    "MoveAction" : {
+      "@id" : "http://schema.org/MoveAction"
+    },
+    "Run" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Run"
+    },
+    "InterestData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#InterestData"
+    },
+    "Ride" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Ride"
+    },
+    "workLocation" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#workLocation",
       "@type" : "@id"
     },
-    "DataOrganisation" : {
-      "@id" : "https://w3id.org/GConsent#DataOrganisation"
+    "url" : {
+      "@id" : "http://schema.org/url"
     },
     "Organization" : {
       "@id" : "http://schema.org/Organization"
     },
+    "ConsumptionData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ConsumptionData"
+    },
     "Thing" : {
       "@id" : "http://schema.org/Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
     "DataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProvider"
     },
-    "DataCombination" : {
-      "@id" : "https://w3id.org/GConsent#DataCombination"
-    },
-    "basedOn" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#basedOn",
+    "dataProvider" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#dataProvider",
       "@type" : "@id"
     },
-    "DataManager" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#DataManager"
+    "WealthData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#WealthData"
     },
-    "ThirdParty" : {
-      "@id" : "https://w3id.org/GConsent#ThirdParty"
-    },
-    "Instant" : {
-      "@id" : "http://www.w3.org/2006/time#Instant"
-    },
-    "Medium" : {
-      "@id" : "https://w3id.org/GConsent#Medium"
+    "GeonamesFeature" : {
+      "@id" : "http://www.geonames.org/ontology#GeonamesFeature"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "hasMedium" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasMedium",
+    "movingTime" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#movingTime"
+    },
+    "KnowledgeData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeData"
+    },
+    "name" : {
+      "@id" : "http://schema.org/name"
+    },
+    "toLocation" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#toLocation",
       "@type" : "@id"
     },
-    "DataStructuring" : {
-      "@id" : "https://w3id.org/GConsent#DataStructuring"
+    "ExternalData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ExternalData"
     },
-    "defineConsentReceipt" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt",
+    "potientialAction" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#potientialAction",
       "@type" : "@id"
     },
-    "createdBy" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#createdBy",
+    "MeanOfTransport" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
+    },
+    "location" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#location",
       "@type" : "@id"
     },
-    "Status" : {
-      "@id" : "https://w3id.org/GConsent#Status"
+    "Plane" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Plane"
     },
-    "isUser" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#isUser",
-      "@type" : "@id"
-    },
-    "DataProcessor" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProcessor"
-    },
-    "hasStatus" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasStatus",
-      "@type" : "@id"
-    },
-    "TemporalEntity" : {
-      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    "Car" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Car"
     },
     "DataOwner" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#DataOwner"
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#DataOwner"
     },
-    "forProcessing" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#forProcessing",
+    "hasGeonamesFeature" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature",
       "@type" : "@id"
     },
     "DataSubject" : {
       "@id" : "https://w3id.org/GConsent#DataSubject"
     },
-    "hasExpiry" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#hasExpiry",
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "instrument" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#instrument",
       "@type" : "@id"
     },
-    "Purpose" : {
-      "@id" : "https://w3id.org/GConsent#Purpose"
+    "SocialData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#SocialData"
     },
     "PersonalDataGraph" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
     },
-    "Processing" : {
-      "@id" : "https://w3id.org/GConsent#Processing"
+    "personalDataType" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#personalDataType",
+      "@type" : "@id"
     },
-    "DataController" : {
-      "@id" : "https://w3id.org/GConsent#DataController"
+    "Train" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Train"
+    },
+    "source" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#source",
+      "@type" : "@id"
     },
     "PersonalData" : {
       "@id" : "https://w3id.org/GConsent#PersonalData"
     },
-    "isProvidedTo" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#isProvidedTo",
+    "GeospatialData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#GeospatialData"
+    },
+    "HealthData" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#HealthData"
+    },
+    "homeLocation" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#homeLocation",
       "@type" : "@id"
     },
-    "DataUse" : {
-      "@id" : "https://w3id.org/GConsent#DataUse"
+    "elapseTime" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#elapseTime"
     },
-    "forPersonalData" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#forPersonalData",
+    "fromLocation" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#fromLocation",
       "@type" : "@id"
     },
-    "atTime" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#atTime",
-      "@type" : "@id"
+    "MoveByAction" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
     },
-    "Consent" : {
-      "@id" : "https://w3id.org/GConsent#Consent"
+    "Action" : {
+      "@id" : "http://schema.org/Action"
     },
-    "ConsentReceipt" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"
+    "adress" : {
+      "@id" : "http://schema.org/adress"
+    },
+    "Bike" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Bike"
+    },
+    "elevationGain" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#elevationGain"
+    },
+    "Walk" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Walk"
+    },
+    "StayAction" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#StayAction"
     }
   }
 }

@@ -26,6 +26,14 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#address -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#address">
+        <rdfs:label>address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
@@ -98,6 +106,14 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#seller -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#seller">
+        <rdfs:label>seller</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#source -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#source">
@@ -130,16 +146,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://schema.org/adress -->
-
-    <owl:DatatypeProperty rdf:about="http://schema.org/adress">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label>adress</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -177,7 +183,8 @@
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elapseTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
         <rdfs:label>elapseTime</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -188,8 +195,38 @@
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elevationGain">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
         <rdfs:label>elevationGain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#endTime -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#endTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:label>endTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#latitude -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#latitude">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#longitude -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>longitude</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -199,8 +236,41 @@
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#movingTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MoveByAction"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
         <rdfs:label>movingTime</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#price -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/BuyAction"/>
+        <rdfs:label>price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#priceCurrency -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#priceCurrency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/BuyAction"/>
+        <rdfs:label>priceCurrency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#startTime -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Action"/>
+        <rdfs:label>startTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -225,11 +295,30 @@
     
 
 
-    <!-- http://schema.org/MoveAction -->
+    <!-- http://schema.org/BuyAction -->
 
-    <owl:Class rdf:about="http://schema.org/MoveAction">
+    <owl:Class rdf:about="http://schema.org/BuyAction">
         <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
-        <rdfs:label>MoveAction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#category"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#location"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#seller"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>BuyAction</rdfs:label>
     </owl:Class>
     
 
@@ -243,10 +332,74 @@
     
 
 
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#address"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/PostalAddress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature"/>
+                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/PostalAddress -->
+
+    <owl:Class rdf:about="http://schema.org/PostalAddress">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>PostalAddress</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://schema.org/Thing -->
 
     <owl:Class rdf:about="http://schema.org/Thing">
         <rdfs:label>Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TravelAction -->
+
+    <owl:Class rdf:about="http://schema.org/TravelAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#category"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#Geospatial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#toLocation"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>TravelAction</rdfs:label>
     </owl:Class>
     
 
@@ -331,6 +484,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Consumption -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Consumption">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Consumption</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#DataOwner -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#DataOwner">
@@ -338,7 +500,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -350,10 +512,28 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#workLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>DataOwner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Health -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Health">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Health</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>KnowledgeAndInterest</rdfs:label>
     </owl:Class>
     
 
@@ -363,28 +543,6 @@
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
         <rdfs:label>MeanOfTransport</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#MoveByAction -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">
-        <rdfs:subClassOf rdf:resource="http://schema.org/MoveAction"/>
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#category"/>
-                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#Geospatial"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#fromLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>MoveByAction</rdfs:label>
     </owl:Class>
     
 
@@ -431,6 +589,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Social -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Social">
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
+        <rdfs:label>Social</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#StayAction -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#StayAction">
@@ -445,7 +612,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#location"/>
-                <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>StayAction</rdfs:label>

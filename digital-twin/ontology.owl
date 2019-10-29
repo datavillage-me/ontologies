@@ -90,14 +90,6 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#personalDataType -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#personalDataType">
-        <rdfs:label>personalDataType</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://www.datavillage.me/ontologies/digital-twin#potientialAction -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#potientialAction">
@@ -434,6 +426,12 @@
 
     <owl:Class rdf:about="https://w3id.org/GConsent#PersonalData">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#source"/>
+                <owl:someValuesFrom rdf:resource="http://semweb.mmlab.be/ns/rml#source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>PersonalData</rdfs:label>
     </owl:Class>
     

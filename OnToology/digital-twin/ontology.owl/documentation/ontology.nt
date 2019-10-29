@@ -8,6 +8,10 @@
 # #################################################################
 # 
 # 
+# https://www.datavillage.me/ontologies/digital-twin#address
+<https://www.datavillage.me/ontologies/digital-twin#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
 # https://www.datavillage.me/ontologies/digital-twin#category
 <https://www.datavillage.me/ontologies/digital-twin#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#category> <http://www.w3.org/2000/01/rdf-schema#label> "category" .
@@ -36,13 +40,13 @@
 <https://www.datavillage.me/ontologies/digital-twin#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
 # 
-# https://www.datavillage.me/ontologies/digital-twin#personalDataType
-<https://www.datavillage.me/ontologies/digital-twin#personalDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://www.datavillage.me/ontologies/digital-twin#personalDataType> <http://www.w3.org/2000/01/rdf-schema#label> "personalDataType" .
-# 
 # https://www.datavillage.me/ontologies/digital-twin#potientialAction
 <https://www.datavillage.me/ontologies/digital-twin#potientialAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#potientialAction> <http://www.w3.org/2000/01/rdf-schema#label> "potientialAction" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#seller
+<https://www.datavillage.me/ontologies/digital-twin#seller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#seller> <http://www.w3.org/2000/01/rdf-schema#label> "seller" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#source
 <https://www.datavillage.me/ontologies/digital-twin#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -65,12 +69,6 @@
 # #################################################################
 # 
 # 
-# http://schema.org/adress
-<http://schema.org/adress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://schema.org/adress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://schema.org/adress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://schema.org/adress> <http://www.w3.org/2000/01/rdf-schema#label> "adress" .
-# 
 # http://schema.org/name
 <http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
@@ -91,22 +89,62 @@
 <https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.datavillage.me/ontologies/digital-twin#MoveByAction> .
+<https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/TravelAction> .
+<https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.datavillage.me/ontologies/digital-twin#StayAction> .
 <https://www.datavillage.me/ontologies/digital-twin#elapseTime> <http://www.w3.org/2000/01/rdf-schema#label> "elapseTime" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#elevationGain
 <https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.datavillage.me/ontologies/digital-twin#MoveByAction> .
+<https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/TravelAction> .
 <https://www.datavillage.me/ontologies/digital-twin#elevationGain> <http://www.w3.org/2000/01/rdf-schema#label> "elevationGain" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#endTime
+<https://www.datavillage.me/ontologies/digital-twin#endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#endTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Action> .
+<https://www.datavillage.me/ontologies/digital-twin#endTime> <http://www.w3.org/2000/01/rdf-schema#label> "endTime" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#latitude
+<https://www.datavillage.me/ontologies/digital-twin#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<https://www.datavillage.me/ontologies/digital-twin#latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#longitude
+<https://www.datavillage.me/ontologies/digital-twin#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#longitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<https://www.datavillage.me/ontologies/digital-twin#longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#movingTime
 <https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 <https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.datavillage.me/ontologies/digital-twin#MoveByAction> .
+<https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/TravelAction> .
 <https://www.datavillage.me/ontologies/digital-twin#movingTime> <http://www.w3.org/2000/01/rdf-schema#label> "movingTime" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#price
+<https://www.datavillage.me/ontologies/digital-twin#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#price> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/BuyAction> .
+<https://www.datavillage.me/ontologies/digital-twin#price> <http://www.w3.org/2000/01/rdf-schema#label> "price" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#priceCurrency
+<https://www.datavillage.me/ontologies/digital-twin#priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#priceCurrency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#priceCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/BuyAction> .
+<https://www.datavillage.me/ontologies/digital-twin#priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "priceCurrency" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#startTime
+<https://www.datavillage.me/ontologies/digital-twin#startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#startTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://www.datavillage.me/ontologies/digital-twin#startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Action> .
+<https://www.datavillage.me/ontologies/digital-twin#startTime> <http://www.w3.org/2000/01/rdf-schema#label> "startTime" .
 # 
 # 
 # 
@@ -122,19 +160,72 @@
 <http://schema.org/Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
 <http://schema.org/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
 # 
-# http://schema.org/MoveAction
-<http://schema.org/MoveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://schema.org/MoveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Action> .
-<http://schema.org/MoveAction> <http://www.w3.org/2000/01/rdf-schema#label> "MoveAction" .
+# http://schema.org/BuyAction
+<http://schema.org/BuyAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Action> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#category> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/digital-twin#Consumption> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#location> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#seller> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Organization> .
+<http://schema.org/BuyAction> <http://www.w3.org/2000/01/rdf-schema#label> "BuyAction" .
 # 
 # http://schema.org/Organization
 <http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
 <http://schema.org/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#address> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/PostalAddress> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#hasGeonamesFeature> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.geonames.org/ontology#Feature> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "PostalAddress" .
+# 
 # http://schema.org/Thing
 <http://schema.org/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .
+# 
+# http://schema.org/TravelAction
+<http://schema.org/TravelAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Action> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#category> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#Geospatial> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#fromLocation> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#instrument> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#toLocation> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
+<http://schema.org/TravelAction> <http://www.w3.org/2000/01/rdf-schema#label> "TravelAction" .
 # 
 # http://semweb.mmlab.be/ns/rml#source
 <http://semweb.mmlab.be/ns/rml#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -153,6 +244,10 @@
 # https://w3id.org/GConsent#PersonalData
 <https://w3id.org/GConsent#PersonalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/GConsent#PersonalData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<https://w3id.org/GConsent#PersonalData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#source> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semweb.mmlab.be/ns/rml#source> .
 <https://w3id.org/GConsent#PersonalData> <http://www.w3.org/2000/01/rdf-schema#label> "PersonalData" .
 # 
 # https://www.datavillage.me/ontologies/LConsent#DataProvider
@@ -180,49 +275,50 @@
 <https://www.datavillage.me/ontologies/digital-twin#Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> .
 <https://www.datavillage.me/ontologies/digital-twin#Car> <http://www.w3.org/2000/01/rdf-schema#label> "Car" .
 # 
+# https://www.datavillage.me/ontologies/digital-twin#Consumption
+<https://www.datavillage.me/ontologies/digital-twin#Consumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.datavillage.me/ontologies/digital-twin#Consumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> .
+<https://www.datavillage.me/ontologies/digital-twin#Consumption> <http://www.w3.org/2000/01/rdf-schema#label> "Consumption" .
+# 
 # https://www.datavillage.me/ontologies/digital-twin#DataOwner
 <https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GConsent#DataSubject> .
-<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#homeLocation> .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.geonames.org/ontology#Feature> .
-<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#potientialAction> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Action> .
-<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#workLocation> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.geonames.org/ontology#Feature> .
+<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#homeLocation> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
+<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#potientialAction> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Action> .
+<https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#workLocation> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
 <https://www.datavillage.me/ontologies/digital-twin#DataOwner> <http://www.w3.org/2000/01/rdf-schema#label> "DataOwner" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#Health
+<https://www.datavillage.me/ontologies/digital-twin#Health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.datavillage.me/ontologies/digital-twin#Health> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> .
+<https://www.datavillage.me/ontologies/digital-twin#Health> <http://www.w3.org/2000/01/rdf-schema#label> "Health" .
+# 
+# https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest
+<https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> .
+<https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest> <http://www.w3.org/2000/01/rdf-schema#label> "KnowledgeAndInterest" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport
 <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
 <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> <http://www.w3.org/2000/01/rdf-schema#label> "MeanOfTransport" .
 # 
-# https://www.datavillage.me/ontologies/digital-twin#MoveByAction
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/MoveAction> .
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> .
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#category> .
-_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#Geospatial> .
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#fromLocation> .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.geonames.org/ontology#Feature> .
-<https://www.datavillage.me/ontologies/digital-twin#MoveByAction> <http://www.w3.org/2000/01/rdf-schema#label> "MoveByAction" .
-# 
 # https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph
 <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/GConsent#PersonalData> .
-<https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#dataProvider> .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#DataProvider> .
+<https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#dataProvider> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#DataProvider> .
 <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> <http://www.w3.org/2000/01/rdf-schema#label> "PersonalDataGraph" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#Plane
@@ -240,18 +336,23 @@ _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage
 <https://www.datavillage.me/ontologies/digital-twin#Run> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport> .
 <https://www.datavillage.me/ontologies/digital-twin#Run> <http://www.w3.org/2000/01/rdf-schema#label> "Run" .
 # 
+# https://www.datavillage.me/ontologies/digital-twin#Social
+<https://www.datavillage.me/ontologies/digital-twin#Social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.datavillage.me/ontologies/digital-twin#Social> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory> .
+<https://www.datavillage.me/ontologies/digital-twin#Social> <http://www.w3.org/2000/01/rdf-schema#label> "Social" .
+# 
 # https://www.datavillage.me/ontologies/digital-twin#StayAction
 <https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Action> .
 <https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph> .
-<https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#category> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#Geospatial> .
-<https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#location> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.geonames.org/ontology#Feature> .
+<https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#category> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.datavillage.me/ontologies/LConsent#Geospatial> .
+<https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://www.datavillage.me/ontologies/digital-twin#location> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Place> .
 <https://www.datavillage.me/ontologies/digital-twin#StayAction> <http://www.w3.org/2000/01/rdf-schema#label> "StayAction" .
 # 
 # https://www.datavillage.me/ontologies/digital-twin#Train

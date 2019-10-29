@@ -1,10 +1,10 @@
 {
   "@context" : {
-    "MoveAction" : {
-      "@id" : "http://schema.org/MoveAction"
-    },
     "Run" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Run"
+    },
+    "Social" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Social"
     },
     "Ride" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Ride"
@@ -15,6 +15,12 @@
     },
     "url" : {
       "@id" : "http://schema.org/url"
+    },
+    "BuyAction" : {
+      "@id" : "http://schema.org/BuyAction"
+    },
+    "Health" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Health"
     },
     "Organization" : {
       "@id" : "http://schema.org/Organization"
@@ -28,6 +34,12 @@
     "DataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProvider"
     },
+    "Consumption" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#Consumption"
+    },
+    "TravelAction" : {
+      "@id" : "http://schema.org/TravelAction"
+    },
     "dataProvider" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#dataProvider",
       "@type" : "@id"
@@ -38,11 +50,17 @@
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
+    "longitude" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#longitude"
+    },
     "movingTime" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#movingTime"
     },
     "Geospatial" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#Geospatial"
+    },
+    "latitude" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#latitude"
     },
     "name" : {
       "@id" : "http://schema.org/name"
@@ -55,6 +73,9 @@
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#potientialAction",
       "@type" : "@id"
     },
+    "startTime" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#startTime"
+    },
     "MeanOfTransport" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
     },
@@ -62,11 +83,21 @@
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#location",
       "@type" : "@id"
     },
+    "KnowledgeAndInterest" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest"
+    },
     "Plane" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Plane"
     },
+    "address" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#address",
+      "@type" : "@id"
+    },
     "Car" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Car"
+    },
+    "PostalAddress" : {
+      "@id" : "http://schema.org/PostalAddress"
     },
     "DataOwner" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#DataOwner"
@@ -78,16 +109,18 @@
     "DataSubject" : {
       "@id" : "https://w3id.org/GConsent#DataSubject"
     },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
     "instrument" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#instrument",
       "@type" : "@id"
     },
+    "priceCurrency" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#priceCurrency"
+    },
     "PersonalDataGraph" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
-    },
-    "personalDataType" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#personalDataType",
-      "@type" : "@id"
     },
     "Train" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Train"
@@ -102,12 +135,22 @@
     "PersonalData" : {
       "@id" : "https://w3id.org/GConsent#PersonalData"
     },
+    "endTime" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#endTime"
+    },
     "category" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#category",
       "@type" : "@id"
     },
     "homeLocation" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#homeLocation",
+      "@type" : "@id"
+    },
+    "price" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#price"
+    },
+    "seller" : {
+      "@id" : "https://www.datavillage.me/ontologies/digital-twin#seller",
       "@type" : "@id"
     },
     "elapseTime" : {
@@ -117,14 +160,8 @@
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#fromLocation",
       "@type" : "@id"
     },
-    "MoveByAction" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-    },
     "Action" : {
       "@id" : "http://schema.org/Action"
-    },
-    "adress" : {
-      "@id" : "http://schema.org/adress"
     },
     "Bike" : {
       "@id" : "https://www.datavillage.me/ontologies/digital-twin#Bike"

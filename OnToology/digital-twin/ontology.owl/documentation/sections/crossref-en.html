@@ -11,8 +11,15 @@ This section provides details for each class and property defined by [Ontology N
             title="https://www.datavillage.me/ontologies/digital-twin#Bike">Bike</a>
       </li>
       <li>
+         <a href="#http://schema.org/BuyAction" title="http://schema.org/BuyAction">BuyAction</a>
+      </li>
+      <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Car"
             title="https://www.datavillage.me/ontologies/digital-twin#Car">Car</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#Consumption"
+            title="https://www.datavillage.me/ontologies/digital-twin#Consumption">Consumption</a>
       </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#DataOwner"
@@ -33,15 +40,16 @@ This section provides details for each class and property defined by [Ontology N
             title="https://www.datavillage.me/ontologies/LConsent#Geospatial">Geospatial</a>
       </li>
       <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#Health"
+            title="https://www.datavillage.me/ontologies/digital-twin#Health">Health</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest"
+            title="https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest">KnowledgeAndInterest</a>
+      </li>
+      <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
             title="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">MeanOfTransport</a>
-      </li>
-      <li>
-         <a href="#http://schema.org/MoveAction" title="http://schema.org/MoveAction">MoveAction</a>
-      </li>
-      <li>
-         <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-            title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
       </li>
       <li>
          <a href="#http://schema.org/Organization" title="http://schema.org/Organization">Organization</a>
@@ -58,8 +66,14 @@ This section provides details for each class and property defined by [Ontology N
             title="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">PersonalDataGraph</a>
       </li>
       <li>
+         <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+      </li>
+      <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Plane"
             title="https://www.datavillage.me/ontologies/digital-twin#Plane">Plane</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
       </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Ride"
@@ -68,6 +82,10 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Run"
             title="https://www.datavillage.me/ontologies/digital-twin#Run">Run</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#Social"
+            title="https://www.datavillage.me/ontologies/digital-twin#Social">Social</a>
       </li>
       <li>
          <a href="#http://semweb.mmlab.be/ns/rml#source" title="http://semweb.mmlab.be/ns/rml#source">source</a>
@@ -82,6 +100,9 @@ This section provides details for each class and property defined by [Ontology N
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Train"
             title="https://www.datavillage.me/ontologies/digital-twin#Train">Train</a>
+      </li>
+      <li>
+         <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
       </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#Walk"
@@ -103,10 +124,19 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://schema.org/MoveAction" title="http://schema.org/MoveAction">MoveAction</a>
+            <a href="#http://schema.org/BuyAction" title="http://schema.org/BuyAction">BuyAction</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#StayAction"
                title="https://www.datavillage.me/ontologies/digital-twin#StayAction">StayAction</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#endTime"
+               title="https://www.datavillage.me/ontologies/digital-twin#endTime">endTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#startTime"
+               title="https://www.datavillage.me/ontologies/digital-twin#startTime">startTime</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -126,6 +156,31 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://schema.org/BuyAction">
+      <h3>BuyAction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/BuyAction</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Action" title="http://schema.org/Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
+               title="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">PersonalDataGraph</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#price"
+               title="https://www.datavillage.me/ontologies/digital-twin#price">price</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#priceCurrency"
+               title="https://www.datavillage.me/ontologies/digital-twin#priceCurrency">priceCurrency</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#Car">
       <h3>Car<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -138,6 +193,22 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
                title="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">MeanOfTransport</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#Consumption">
+      <h3>Consumption<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#Consumption</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
+               title="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">PersonalDataCategory</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -224,6 +295,38 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#Health">
+      <h3>Health<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#Health</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
+               title="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">PersonalDataCategory</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest">
+      <h3>KnowledgeAndInterest<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
+               title="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">PersonalDataCategory</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
       <h3>MeanOfTransport<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -254,54 +357,6 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#Walk"
                title="https://www.datavillage.me/ontologies/digital-twin#Walk">Walk</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://schema.org/MoveAction">
-      <h3>MoveAction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/MoveAction</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://schema.org/Action" title="http://schema.org/Action">Action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-               title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">
-      <h3>MoveByAction<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#MoveByAction</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="#http://schema.org/MoveAction" title="http://schema.org/MoveAction">MoveAction</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
-               title="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">PersonalDataGraph</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://www.datavillage.me/ontologies/digital-twin#elapseTime"
-               title="https://www.datavillage.me/ontologies/digital-twin#elapseTime">elapseTime</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#elevationGain"
-               title="https://www.datavillage.me/ontologies/digital-twin#elevationGain">elevationGain</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#movingTime"
-               title="https://www.datavillage.me/ontologies/digital-twin#movingTime">movingTime</a>
-            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -362,8 +417,16 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://www.datavillage.me/ontologies/LConsent#Geospatial"
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#Consumption"
+               title="https://www.datavillage.me/ontologies/digital-twin#Consumption">Consumption</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/LConsent#Geospatial"
                title="https://www.datavillage.me/ontologies/LConsent#Geospatial">Geospatial</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#Health"
+               title="https://www.datavillage.me/ontologies/digital-twin#Health">Health</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest"
+               title="https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest">KnowledgeAndInterest</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#Social"
+               title="https://www.datavillage.me/ontologies/digital-twin#Social">Social</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -383,11 +446,34 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-               title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
+            <a href="#http://schema.org/BuyAction" title="http://schema.org/BuyAction">BuyAction</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#StayAction"
                title="https://www.datavillage.me/ontologies/digital-twin#StayAction">StayAction</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/Place</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Thing" title="http://schema.org/Thing">Thing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#latitude"
+               title="https://www.datavillage.me/ontologies/digital-twin#latitude">latitude</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#longitude"
+               title="https://www.datavillage.me/ontologies/digital-twin#longitude">longitude</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -403,6 +489,21 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"
                title="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">MeanOfTransport</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://schema.org/PostalAddress">
+      <h3>PostalAddress<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/PostalAddress</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Thing" title="http://schema.org/Thing">Thing</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -439,6 +540,22 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#Social">
+      <h3>Social<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#Social</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
+               title="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">PersonalDataCategory</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://semweb.mmlab.be/ns/rml#source">
       <h3>source<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -462,6 +579,12 @@ This section provides details for each class and property defined by [Ontology N
                title="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">PersonalDataGraph</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#elapseTime"
+               title="https://www.datavillage.me/ontologies/digital-twin#elapseTime">elapseTime</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://schema.org/Thing">
@@ -483,6 +606,8 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/GConsent#PersonalData" title="https://w3id.org/GConsent#PersonalData">PersonalData</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"
                title="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory">PersonalDataCategory</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://schema.org/PostalAddress" title="http://schema.org/PostalAddress">PostalAddress</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -509,6 +634,33 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://schema.org/TravelAction">
+      <h3>TravelAction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://schema.org/TravelAction</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://schema.org/Action" title="http://schema.org/Action">Action</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"
+               title="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph">PersonalDataGraph</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://www.datavillage.me/ontologies/digital-twin#elapseTime"
+               title="https://www.datavillage.me/ontologies/digital-twin#elapseTime">elapseTime</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#elevationGain"
+               title="https://www.datavillage.me/ontologies/digital-twin#elevationGain">elevationGain</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://www.datavillage.me/ontologies/digital-twin#movingTime"
+               title="https://www.datavillage.me/ontologies/digital-twin#movingTime">movingTime</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#Walk">
       <h3>Walk<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -528,6 +680,10 @@ This section provides details for each class and property defined by [Ontology N
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#address"
+            title="https://www.datavillage.me/ontologies/digital-twin#address">address</a>
+      </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#category"
             title="https://www.datavillage.me/ontologies/digital-twin#category">category</a>
@@ -565,6 +721,10 @@ This section provides details for each class and property defined by [Ontology N
             title="https://www.datavillage.me/ontologies/digital-twin#potientialAction">potientialAction</a>
       </li>
       <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#seller"
+            title="https://www.datavillage.me/ontologies/digital-twin#seller">seller</a>
+      </li>
+      <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#source"
             title="https://www.datavillage.me/ontologies/digital-twin#source">source</a>
       </li>
@@ -577,6 +737,14 @@ This section provides details for each class and property defined by [Ontology N
             title="https://www.datavillage.me/ontologies/digital-twin#workLocation">workLocation</a>
       </li>
    </ul>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#address">
+      <h3>address<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#address</p>
+   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#category">
       <h3>category<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -649,6 +817,14 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#potientialAction</p>
    </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#seller">
+      <h3>seller<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#seller</p>
+   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#source">
       <h3>source<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -677,15 +853,24 @@ This section provides details for each class and property defined by [Ontology N
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://schema.org/adress" title="http://schema.org/adress">adress</a>
-      </li>
-      <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#elapseTime"
             title="https://www.datavillage.me/ontologies/digital-twin#elapseTime">elapseTime</a>
       </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#elevationGain"
             title="https://www.datavillage.me/ontologies/digital-twin#elevationGain">elevationGain</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#endTime"
+            title="https://www.datavillage.me/ontologies/digital-twin#endTime">endTime</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#latitude"
+            title="https://www.datavillage.me/ontologies/digital-twin#latitude">latitude</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#longitude"
+            title="https://www.datavillage.me/ontologies/digital-twin#longitude">longitude</a>
       </li>
       <li>
          <a href="#https://www.datavillage.me/ontologies/digital-twin#movingTime"
@@ -695,27 +880,21 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#http://schema.org/name" title="http://schema.org/name">name</a>
       </li>
       <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#price"
+            title="https://www.datavillage.me/ontologies/digital-twin#price">price</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#priceCurrency"
+            title="https://www.datavillage.me/ontologies/digital-twin#priceCurrency">priceCurrency</a>
+      </li>
+      <li>
+         <a href="#https://www.datavillage.me/ontologies/digital-twin#startTime"
+            title="https://www.datavillage.me/ontologies/digital-twin#startTime">startTime</a>
+      </li>
+      <li>
          <a href="#http://schema.org/url" title="http://schema.org/url">url</a>
       </li>
    </ul>
-   <div class="entity" id="http://schema.org/adress">
-      <h3>adress<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://schema.org/adress</p>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#elapseTime">
       <h3>elapseTime<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -733,8 +912,12 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-                  title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
+               <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#https://www.datavillage.me/ontologies/digital-twin#StayAction"
+                  title="https://www.datavillage.me/ontologies/digital-twin#StayAction">StayAction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -757,8 +940,68 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-                  title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
+               <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#endTime">
+      <h3>endTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#endTime</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Action" title="http://schema.org/Action">Action</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#latitude">
+      <h3>latitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#latitude</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#longitude">
+      <h3>longitude<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#longitude</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Place" title="http://schema.org/Place">Place</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -781,8 +1024,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://www.datavillage.me/ontologies/digital-twin#MoveByAction"
-                  title="https://www.datavillage.me/ontologies/digital-twin#MoveByAction">MoveByAction</a>
+               <a href="#http://schema.org/TravelAction" title="http://schema.org/TravelAction">TravelAction</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -806,6 +1048,75 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#http://schema.org/Thing" title="http://schema.org/Thing">Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#price">
+      <h3>price<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#price</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/BuyAction" title="http://schema.org/BuyAction">BuyAction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#priceCurrency">
+      <h3>priceCurrency<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#priceCurrency</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/BuyAction" title="http://schema.org/BuyAction">BuyAction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://www.datavillage.me/ontologies/digital-twin#startTime">
+      <h3>startTime<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://www.datavillage.me/ontologies/digital-twin#startTime</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://schema.org/Action" title="http://schema.org/Action">Action</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

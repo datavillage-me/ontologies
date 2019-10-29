@@ -13,9 +13,6 @@
     "url" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#url"
     },
-    "Asset" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#Asset"
-    },
     "forPurpose" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#forPurpose",
       "@type" : "@id"
@@ -52,6 +49,9 @@
       "@id" : "https://www.datavillage.me/ontologies/LConsent#createdAt",
       "@type" : "@id"
     },
+    "Consumption" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#Consumption"
+    },
     "isGivenBy" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#isGivenBy",
       "@type" : "@id"
@@ -78,9 +78,6 @@
     "mapper" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#mapper"
     },
-    "Interest" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#Interest"
-    },
     "defineConsentReceipt" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#defineConsentReceipt",
       "@type" : "@id"
@@ -91,9 +88,6 @@
     },
     "Status" : {
       "@id" : "https://w3id.org/GConsent#Status"
-    },
-    "Knowledge" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#Knowledge"
     },
     "hasDuration" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#hasDuration",
@@ -120,8 +114,11 @@
       "@id" : "https://www.datavillage.me/ontologies/LConsent#isUser",
       "@type" : "@id"
     },
-    "ExternalData" : {
-      "@id" : "https://www.datavillage.me/ontologies/digital-twin#ExternalData"
+    "accessKey" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#accessKey"
+    },
+    "KnowledgeAndInterest" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#KnowledgeAndInterest"
     },
     "DataProcessor" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#DataProcessor"
@@ -138,6 +135,10 @@
     },
     "forProcessing" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#forProcessing",
+      "@type" : "@id"
+    },
+    "dataHistoryDuration" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration",
       "@type" : "@id"
     },
     "DataSubject" : {
@@ -172,6 +173,9 @@
     "PersonalData" : {
       "@id" : "https://w3id.org/GConsent#PersonalData"
     },
+    "OpenAPIDataSource" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#OpenAPIDataSource"
+    },
     "ExternalDataSource" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#ExternalDataSource"
     },
@@ -193,8 +197,8 @@
       "@id" : "https://www.datavillage.me/ontologies/LConsent#category",
       "@type" : "@id"
     },
-    "Financial" : {
-      "@id" : "https://www.datavillage.me/ontologies/LConsent#Financial"
+    "CustomDataSource" : {
+      "@id" : "https://www.datavillage.me/ontologies/LConsent#CustomDataSource"
     },
     "forPersonalData" : {
       "@id" : "https://www.datavillage.me/ontologies/LConsent#forPersonalData",

@@ -1,29 +1,36 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "https://www.datavillage.me/ontologies/digital-twin#StayAction" "GConsent:DataSubject" "https://www.datavillage.me/ontologies/digital-twin#MoveByAction" "https://www.datavillage.me/ontologies/digital-twin#Plane" "https://www.datavillage.me/ontologies/digital-twin#Run" "https://www.datavillage.me/ontologies/digital-twin#Bike" "https://www.datavillage.me/ontologies/digital-twin#Walk" "schema:MoveAction" "schema:Organization" "schema:Action" "LConsent:DataProvider" "https://www.datavillage.me/ontologies/digital-twin#Car" "schema:Thing" "https://www.datavillage.me/ontologies/digital-twin#Train" "https://www.datavillage.me/ontologies/digital-twin#Ride" "GConsent:PersonalData" "gn:Feature" "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" "https://www.datavillage.me/ontologies/digital-twin#DataOwner" "LConsent:Geospatial" "LConsent:PersonalDataCategory" ; /*classes style*/
+node [shape = rectangle, color="black"]; "schema:BuyAction" "https://www.datavillage.me/ontologies/digital-twin#StayAction" "GConsent:DataSubject" "https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest" "https://www.datavillage.me/ontologies/digital-twin#Plane" "https://www.datavillage.me/ontologies/digital-twin#Run" "https://www.datavillage.me/ontologies/digital-twin#Health" "https://www.datavillage.me/ontologies/digital-twin#Bike" "https://www.datavillage.me/ontologies/digital-twin#Walk" "schema:Organization" "schema:PostalAddress" "schema:Action" "LConsent:DataProvider" "https://www.datavillage.me/ontologies/digital-twin#Car" "schema:Thing" "https://www.datavillage.me/ontologies/digital-twin#Train" "https://www.datavillage.me/ontologies/digital-twin#Ride" "GConsent:PersonalData" "gn:Feature" "https://www.datavillage.me/ontologies/digital-twin#Social" "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" "https://www.datavillage.me/ontologies/digital-twin#DataOwner" "LConsent:Geospatial" "schema:Place" "https://www.datavillage.me/ontologies/digital-twin#Consumption" "LConsent:PersonalDataCategory" "schema:TravelAction" ; /*classes style*/
 	"https://www.datavillage.me/ontologies/digital-twin#Walk" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
 	"LConsent:Geospatial" -> "LConsent:PersonalDataCategory" [ label = "rdfs:subClassOf" ];
 	"LConsent:PersonalDataCategory" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"gn:Feature" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest" -> "LConsent:PersonalDataCategory" [ label = "rdfs:subClassOf" ];
+	"LConsent:DataProvider" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
 	"schema:Action" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Plane" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Run" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#DataOwner" -> "GConsent:DataSubject" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Ride" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
-	"LConsent:DataProvider" -> "schema:Organization" [ label = "rdfs:subClassOf" ];
-	"schema:MoveAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/digital-twin#MoveByAction" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/digital-twin#MoveByAction" -> "schema:MoveAction" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Social" -> "LConsent:PersonalDataCategory" [ label = "rdfs:subClassOf" ];
+	"schema:BuyAction" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"schema:BuyAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Consumption" -> "LConsent:PersonalDataCategory" [ label = "rdfs:subClassOf" ];
+	"schema:PostalAddress" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#StayAction" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#StayAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
 	"schema:Organization" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
-	"https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" -> "GConsent:PersonalData" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Car" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" -> "GConsent:PersonalData" [ label = "rdfs:subClassOf" ];
+	"schema:TravelAction" -> "https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph" [ label = "rdfs:subClassOf" ];
+	"schema:TravelAction" -> "schema:Action" [ label = "rdfs:subClassOf" ];
+	"https://www.datavillage.me/ontologies/digital-twin#Health" -> "LConsent:PersonalDataCategory" [ label = "rdfs:subClassOf" ];
 	"GConsent:PersonalData" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"GConsent:DataSubject" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Bike" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
 	"https://www.datavillage.me/ontologies/digital-twin#Train" -> "https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport" [ label = "rdfs:subClassOf" ];
+	"schema:Place" -> "schema:Thing" [ label = "rdfs:subClassOf" ];
 
 }

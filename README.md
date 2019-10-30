@@ -1,7 +1,7 @@
 # ONTOLOGIES: OWL + WIDOCO + NETLIFY
 This project describes the two ontologies used by https://www.datavillage.me to build the Digital Twins of people and to process these Digital Twins in a fully transparent way.
 This project uses WIDICO (https://github.com/dgarijo/Widoco) to generate documentation of ontologies.
-Generated ontology websites are deployed automatically on https://www.netlify.com.
+The generated ontology websites are automatically deployed on https://www.netlify.com.
 
 ## Ontology digital-twin (ONGOING WORK)
 It defines the way personal data are organised in the five Digital Twins.

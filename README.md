@@ -11,6 +11,7 @@ https://www.datavillage.me/ontologies/digital-twin/
 
 ## Ontology LConsent (ONGOING WORK)
 It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.
+
 https://www.datavillage.me/ontologies/lconsent/
 
 ## Deployment

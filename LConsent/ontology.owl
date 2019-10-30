@@ -28,22 +28,6 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/LConsent#atTime -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#atTime">
-        <rdfs:label>atTime</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/LConsent#basedOn -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#basedOn">
-        <rdfs:label>basedOn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://www.datavillage.me/ontologies/LConsent#category -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#category">
@@ -176,14 +160,6 @@
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#isUser">
         <rdfs:label>isUser</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/LConsent#juridication -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#juridication">
-        <rdfs:label>juridication</rdfs:label>
     </owl:ObjectProperty>
     
 

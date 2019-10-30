@@ -5,7 +5,11 @@ The generated ontology websites are automatically deployed on https://www.netlif
 
 ## Ontology digital-twin (ONGOING WORK)
 It defines the way personal data are organised in the five Digital Twins.
-SOCIAL|GEOSPATIAL|KNOWLEDGE&INTEREST|HEALTH|CONSUMPTION
+- SOCIAL
+- GEOSPATIAL
+- KNOWLEDGE&INTEREST
+- HEALTH
+- CONSUMPTION
 
 https://www.datavillage.me/ontologies/digital-twin/
 

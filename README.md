@@ -1,21 +1,23 @@
 # ONTOLOGIES: OWL + WIDOCO + NETLIFY
-This project describes the two ontologies used by https://www.datavillage.me to build the Digital Twins of people and to process these Digital twins in a full transparent way.
+This project describes the two ontologies used by https://www.datavillage.me to build the Digital Twins of people and to process these Digital Twins in a full transparent way.
 This project uses WIDICO (https://github.com/dgarijo/Widoco) to generate documentation of ontologies.
-Generated ontology websites are deployed on https://www.netlify.com.
+Generated ontology websites are deployed automatically on https://www.netlify.com.
 
-## digital-twin ontology
+## Ontology digital-twin (ONGOING WORK)
 It defines the way personal data are organised in the five Digital Twins.
 SOCIAL|GEOSPATIAL|KNOWLEDGE&INTEREST|HEALTH|CONSUMPTION
 
 https://www.datavillage.me/ontologies/digital-twin/
 
-## LConsent ontology
-It formalizes the way in which consent is organized between the end user and organizations
+## Ontology LConsent (ONGOING WORK)
+It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.
 https://www.datavillage.me/ontologies/lconsent/
 
 ## Deployment
 ### Make sure widoco jar file is included into your github repository
 ```
+- Download widico executable https://github.com/dgarijo/WIDOCO/releases/tag/v1.4.12
+- Include into your git repository
 ```
 ### Create your Netlify website
 ```

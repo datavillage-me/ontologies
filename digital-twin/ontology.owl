@@ -212,12 +212,13 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
+    <!-- https://www.datavillage.me/ontologies/digital-twin#categories -->
 
-    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#categories">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Product"/>
         <rdfs:range rdf:resource="https://www.datavillage.me/ontologies/digital-twin#%7B%22Food%26Drink%22%2C%22Shopping%26Services%22%2C%22Clothes%26Shoes%22%2C%22TV%2CInternet%2CTel%22%2C%22IT%2CHouseholdDevice%22%2C%22Housing%22%2C%22Energy%22%2C%22Water%22%2C%22RentingOrCredit%22%2C%22Leisure%22%2C%22Restaurant%22%2C%22Banking%26Finance%22%2C%22Insurance%22%2C%22Saving%22%2C%22Investment%22%2C%22Others%22%7D"/>
+        <rdfs:label>categories</rdfs:label>
     </owl:DatatypeProperty>
     
 

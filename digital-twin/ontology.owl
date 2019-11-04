@@ -34,6 +34,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#brand -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>brand</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
@@ -193,6 +202,16 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#emissionsCO2 -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#emissionsCO2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>emissionsCO2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#endTime -->
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#endTime">
@@ -219,6 +238,17 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Place"/>
         <rdfs:label>longitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#model -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#model">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>model</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -267,6 +297,17 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#types -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#types">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>types</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -283,6 +324,15 @@
     <owl:Class rdf:about="http://schema.org/Action">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
         <rdfs:label>Action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/BusOrCoach -->
+
+    <owl:Class rdf:about="http://schema.org/BusOrCoach">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>BusOrCoach</rdfs:label>
     </owl:Class>
     
 
@@ -311,6 +361,24 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>BuyAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Car -->
+
+    <owl:Class rdf:about="http://schema.org/Car">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>Car</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Motorcycle -->
+
+    <owl:Class rdf:about="http://schema.org/Motorcycle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>Motorcycle</rdfs:label>
     </owl:Class>
     
 
@@ -382,7 +450,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#instrument"/>
-                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Vehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -392,6 +460,21 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>TravelAction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Vehicle -->
+
+    <owl:Class rdf:about="http://schema.org/Vehicle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#brand"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -464,20 +547,11 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Bike -->
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Bicycle -->
 
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Bike">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Bike</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Car -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Car">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Car</rdfs:label>
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Bicycle">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>Bicycle</rdfs:label>
     </owl:Class>
     
 
@@ -518,6 +592,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Foot -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Foot">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+        <rdfs:label>Foot</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#Health -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Health">
@@ -532,15 +615,6 @@
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#KnowledgeAndInterest">
         <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
         <rdfs:label>KnowledgeAndInterest</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
-        <rdfs:label>MeanOfTransport</rdfs:label>
     </owl:Class>
     
 
@@ -563,17 +637,7 @@
     <!-- https://www.datavillage.me/ontologies/digital-twin#Plane -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Plane">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Plane</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.datavillage.me/ontologies/digital-twin#Ride -->
-
-    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Ride">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Ride</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
     </owl:Class>
     
 
@@ -581,8 +645,7 @@
     <!-- https://www.datavillage.me/ontologies/digital-twin#Run -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Run">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Run</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Foot"/>
     </owl:Class>
     
 
@@ -621,8 +684,7 @@
     <!-- https://www.datavillage.me/ontologies/digital-twin#Train -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Train">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Train</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
     </owl:Class>
     
 
@@ -630,8 +692,7 @@
     <!-- https://www.datavillage.me/ontologies/digital-twin#Walk -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Walk">
-        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#MeanOfTransport"/>
-        <rdfs:label>Walk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Foot"/>
     </owl:Class>
 </rdf:RDF>
 

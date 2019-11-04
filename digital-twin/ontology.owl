@@ -18,6 +18,33 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#%7B%22Food%26Drink%22%2C%22Shopping%26Services%22%2C%22Clothes%26Shoes%22%2C%22TV%2CInternet%2CTel%22%2C%22IT%2CHouseholdDevice%22%2C%22Housing%22%2C%22Energy%22%2C%22Water%22%2C%22RentingOrCredit%22%2C%22Leisure%22%2C%22Restaurant%22%2C%22Banking%26Finance%22%2C%22Insurance%22%2C%22Saving%22%2C%22Investment%22%2C%22Others%22%7D -->
+
+    <rdfs:Datatype rdf:about="https://www.datavillage.me/ontologies/digital-twin#%7B%22Food%26Drink%22%2C%22Shopping%26Services%22%2C%22Clothes%26Shoes%22%2C%22TV%2CInternet%2CTel%22%2C%22IT%2CHouseholdDevice%22%2C%22Housing%22%2C%22Energy%22%2C%22Water%22%2C%22RentingOrCredit%22%2C%22Leisure%22%2C%22Restaurant%22%2C%22Banking%26Finance%22%2C%22Insurance%22%2C%22Saving%22%2C%22Investment%22%2C%22Others%22%7D">
+        <rdfs:label>{&quot;Food &amp; drink&quot;,&quot;Shopping &amp; services&quot;,&quot;Clothes &amp; shoes&quot;,&quot;TV, internet, Tel&quot;,&quot;IT, household device&quot;,&quot;Housing&quot;,&quot;Energy&quot;,&quot;Water&quot;,&quot;Renting or Credit&quot;,&quot;Leisure&quot;,&quot;Restaurant&quot;,&quot;Banking &amp; finance&quot;,&quot;Insurance&quot;,&quot;Saving&quot;,&quot;Investment&quot;,&quot;Others&quot;}</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#%7B%22accounting%22%2C%22airport%22%7D -->
+
+    <rdfs:Datatype rdf:about="https://www.datavillage.me/ontologies/digital-twin#%7B%22accounting%22%2C%22airport%22%7D">
+        <rdfs:label>{&quot;accounting&quot;,&quot;airport&quot;}</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -45,9 +72,7 @@
 
     <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
-        <rdfs:label>category</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category"/>
     
 
 
@@ -95,6 +120,14 @@
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#location">
         <rdfs:label>location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#object -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#object">
+        <rdfs:label>object</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -176,6 +209,17 @@
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </rdf:Description>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/Product"/>
+        <rdfs:range rdf:resource="https://www.datavillage.me/ontologies/digital-twin#%7B%22Food%26Drink%22%2C%22Shopping%26Services%22%2C%22Clothes%26Shoes%22%2C%22TV%2CInternet%2CTel%22%2C%22IT%2CHouseholdDevice%22%2C%22Housing%22%2C%22Energy%22%2C%22Water%22%2C%22RentingOrCredit%22%2C%22Leisure%22%2C%22Restaurant%22%2C%22Banking%26Finance%22%2C%22Insurance%22%2C%22Saving%22%2C%22Investment%22%2C%22Others%22%7D"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -303,6 +347,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:range rdf:resource="https://www.datavillage.me/ontologies/digital-twin#%7B%22accounting%22%2C%22airport%22%7D"/>
         <rdfs:label>types</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -352,6 +397,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#location"/>
                 <owl:someValuesFrom rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#object"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -418,6 +469,15 @@
     <owl:Class rdf:about="http://schema.org/PostalAddress">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
         <rdfs:label>PostalAddress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Product -->
+
+    <owl:Class rdf:about="http://schema.org/Product">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Product</rdfs:label>
     </owl:Class>
     
 
@@ -694,6 +754,20 @@
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Walk">
         <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Foot"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
+        <rdfs:label>category</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

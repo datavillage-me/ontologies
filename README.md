@@ -11,6 +11,10 @@ It defines the way personal data are organised in the five Digital Twins.
 - HEALTH
 - CONSUMPTION
 
+Conceptual data model
+![Datavillage digital-twin conceptual data model](./digital-twin/conceptual-model.png)
+
+Ontology
 https://www.datavillage.me/ontologies/digital-twin/
 
 ## Ontology LConsent (ONGOING WORK)

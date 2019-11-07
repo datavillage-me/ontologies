@@ -29,7 +29,8 @@ It defines the way personal data are organised in the five Digital Twins.
 | Food | Any nutritious substance that a Person eat or drink. |
 | Checkup | A thorough examination, especially a medical one, to detect any problems. |
 
-Ontology
+**Ontology**
+The ontology is available here 
 https://www.datavillage.me/ontologies/digital-twin/
 
 ## Ontology LConsent (ONGOING WORK)

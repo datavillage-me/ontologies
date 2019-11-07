@@ -13,6 +13,20 @@ It defines the way personal data are organised in the five Digital Twins.
 
 Conceptual data model
 ![Datavillage digital-twin conceptual data model](./digital-twin/conceptual-model.png)
+| Nodes  | Description |
+| ------------- | ------------- |
+| Me  | The Person who owns the data and performs actions in real life digitized in his DigitalTwin.  |
+| Entity | Entity is either a Person either an Organisation. |
+| Organisation | An Organisation is an Entity. It’s a corporate, a governmental organisation, Startup, Restaurant, ... |
+| Person | A Person is an Entity. |
+| Place | A Place is a place represented by an address. |
+| Transport | Means of transport used to move from one Location to another | 
+| Product | Product Buy|Sell|Rent to an Entity at a specific Place. Products are categorized. |
+| Media | Means of communication used by a Person. |
+| Event | One thing that happens or happens, especially an important thing, that a person participates with others. |
+| Activity | A move activity performed by a Person from one place to another. |
+| Food | Any nutritious substance that a Person eat or drink. |
+| Checkup | A thorough examination, especially a medical one, to detect any problems. |
 
 Ontology
 https://www.datavillage.me/ontologies/digital-twin/

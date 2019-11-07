@@ -11,7 +11,7 @@ It defines the way personal data are organised in the five Digital Twins.
 - HEALTH
 - CONSUMPTION
 
-**Conceptual data model**
+### Conceptual data model
 ![Datavillage digital-twin conceptual data model](./digital-twin/conceptual-model.png)
 
 | Nodes  | Description |
@@ -29,9 +29,10 @@ It defines the way personal data are organised in the five Digital Twins.
 | Food | Any nutritious substance that a Person eat or drink. |
 | Checkup | A thorough examination, especially a medical one, to detect any problems. |
 
-**Ontology**
+### Ontology
 The ontology is available here 
 https://www.datavillage.me/ontologies/digital-twin/
+![Datavillage digital-twin ontology](./digital-twin/ontology.png)
 
 ## Ontology LConsent (ONGOING WORK)
 It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.

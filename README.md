@@ -3,7 +3,7 @@ This project describes the two ontologies used by https://www.datavillage.me to 
 This project uses WIDICO (https://github.com/dgarijo/Widoco) to generate documentation of ontologies.
 The generated ontology websites are automatically deployed on https://www.netlify.com.
 
-## Ontology digital-twin (ONGOING WORK)
+## Digital-twin (ONGOING WORK)
 It defines the way personal data are organised in the five Digital Twins.
 - SOCIAL
 - GEOSPATIAL
@@ -34,7 +34,7 @@ The ontology is available here
 https://www.datavillage.me/ontologies/digital-twin/
 ![Datavillage digital-twin ontology](./digital-twin/ontology.png)
 
-## Ontology LConsent (ONGOING WORK)
+## LConsent (ONGOING WORK)
 It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.
 
 https://www.datavillage.me/ontologies/lconsent/

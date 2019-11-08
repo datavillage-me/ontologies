@@ -37,6 +37,28 @@ https://www.datavillage.me/ontologies/digital-twin/
 ## LConsent (ONGOING WORK)
 It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.
 
+### Conceptual data model
+![Datavillage linear consent conceptual data model](./LConsent/conceptual-model.png)
+
+| Nodes  | Description |
+| ------------- | ------------- |
+| Me  | The Person who owns the data and performs actions in real life digitized in his DigitalTwin.  |
+| Entity | Entity is either a Person either an Organisation. |
+| Organisation | An Organisation is an Entity. It’s a corporate, a governmental organisation, Startup, Restaurant, ... |
+| Person | A Person is an Entity. |
+| Place | A Place is a place represented by an address. |
+| Transport | Means of transport used to move from one Location to another | 
+| Product | Product Buy|Sell|Rent to an Entity at a specific Place. Products are categorized. |
+| Media | Means of communication used by a Person. |
+| Event | One thing that happens or happens, especially an important thing, that a person participates with others. |
+| Activity | A move activity performed by a Person from one place to another. |
+| Food | Any nutritious substance that a Person eat or drink. |
+| Checkup | A thorough examination, especially a medical one, to detect any problems. |
+
+### Ontology
+The ontology is available here 
+https://www.datavillage.me/ontologies/lconsent/
+![Datavillage digital-twin ontology](./LConsent/ontology.png)
 https://www.datavillage.me/ontologies/lconsent/
 
 ## Deployment

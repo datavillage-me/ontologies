@@ -34,32 +34,30 @@ The ontology is available here
 https://www.datavillage.me/ontologies/digital-twin/
 ![Datavillage digital-twin ontology](./digital-twin/ontology.png)
 
-## LConsent (ONGOING WORK)
+## Consent (ONGOING WORK)
 It formalizes the way in which consent is organized between the end user and organizations within a user-centric data management system.
 
 ### Conceptual data model
-![Datavillage linear consent conceptual data model](./LConsent/conceptual-model.png)
+![Datavillage sliced consent conceptual data model](./consent/conceptual-model.png)
 
 | Nodes  | Description |
 | ------------- | ------------- |
-| Me  | The Person who owns the data and performs actions in real life digitized in his DigitalTwin.  |
-| Entity | Entity is either a Person either an Organisation. |
-| Organisation | An Organisation is an Entity. It’s a corporate, a governmental organisation, Startup, Restaurant, ... |
-| Person | A Person is an Entity. |
-| Place | A Place is a place represented by an address. |
-| Transport | Means of transport used to move from one Location to another | 
-| Product | Product Buy|Sell|Rent to an Entity at a specific Place. Products are categorized. |
-| Media | Means of communication used by a Person. |
-| Event | One thing that happens or happens, especially an important thing, that a person participates with others. |
-| Activity | A move activity performed by a Person from one place to another. |
-| Food | Any nutritious substance that a Person eat or drink. |
-| Checkup | A thorough examination, especially a medical one, to detect any problems. |
+| Data manager  | As Data processor, the Data manager helps the user to collects personal data from multiple Data provider after obtaining the Consent of the user. As Data provider, the Data manager helps the user to organise personal data for a specific Process.  |
+| Data management | Specific process related to the management of personal data for the end user. |
+| Personal data sub graph | Data source organised by the Data manager and processed by Data processor. The Personal data sub graph is a subset of all personal data of the user required for a specific Process. |
+| Data Owner | A Person is an Entity who owns the data created through the services of Data provider.The Person is both a user of the Data provider and the Data processor. The Person is also a user of the Data manager. |
+| Consent | Consent created by the data subject for a specific set of data, a specific process and for a given period of time. Taking into account that the Data management is also a Process and required a specific consent. |
+| Consent receipt | Specific model is created for the consent related to the data management. | 
+| Data provider | POrganisation that stores and provides data from data subject. . |
+| Data | Original data source. |
+| Data processor | Organisation that get the personal data from a Data provider after Consent is given by data subject and process data for the specific purpose. |
+| Process | Type of processing performed on data. Taking into account that the Data management is also a Process. |
 
 ### Ontology
 The ontology is available here 
-https://www.datavillage.me/ontologies/lconsent/
-![Datavillage digital-twin ontology](./LConsent/ontology.png)
-https://www.datavillage.me/ontologies/lconsent/
+https://www.datavillage.me/ontologies/consent/
+![Datavillage digital-twin ontology](./consent/ontology.png)
+https://www.datavillage.me/ontologies/consent/
 
 ## Deployment
 ### Make sure widoco jar file is included into your github repository

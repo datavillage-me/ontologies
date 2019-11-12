@@ -3,7 +3,7 @@ MATCH (n) DETACH DELETE n;
 
 CREATE (ds:DataSource {Label: "Data"}),
 (gr:DataSource:Graph {Label: "Personal data sub graph"}),
-(p:Person:Entity {Label: "Person"}),
+(p:Person:Entity {Label: "Data Owner"}),
 (c1:Consent { Label: "Consent"}),
 (c2:Consent { Label: "Consent"}),
 (cr1:ConsentReceipt { Label: "Consent receipt"}),

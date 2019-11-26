@@ -223,6 +223,16 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#distance -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#distance">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
+        <rdfs:label>distance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#elapseTime -->
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#elapseTime">

@@ -63,7 +63,7 @@
     <!-- https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration">
-        <rdfs:label>dataHistoryDuration</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataHistoryMinDuration</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -119,7 +119,7 @@
     <!-- https://www.datavillage.me/ontologies/LConsent#hasDuration -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasDuration">
-        <rdfs:label>hasDuration</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasMinDuration</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -206,6 +206,7 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#description">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/GConsent#Purpose"/>
         <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
         <rdfs:label>description</rdfs:label>
     </owl:DatatypeProperty>
@@ -240,6 +241,24 @@
         <rdfs:domain rdf:resource="https://w3id.org/GConsent#DataController"/>
         <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
         <rdfs:label>url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#activationEndPoint -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#activationEndPoint">
+        <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdfs:label>activationEndPoint</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#revokeEndPoint -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#revokeEndPoint">
+        <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdfs:label>revokeEndPoint</rdfs:label>
     </owl:DatatypeProperty>
     
 

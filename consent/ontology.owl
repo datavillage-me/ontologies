@@ -180,6 +180,30 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/Lconsent#stampedAt -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#stampedAt">
+        <rdfs:label>stampedAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#stampedBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#stampedBy">
+        <rdfs:label>stampedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#validatedAt -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#validatedAt">
+        <rdfs:label>validatedAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -572,6 +596,18 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#juridiction"/>
                 <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/Lconsent#stampedAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/Lconsent#stampedBy"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>ConsentReceipt</rdfs:label>

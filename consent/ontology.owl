@@ -273,7 +273,19 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#activationEndPoint">
         <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
         <rdfs:label>activationEndPoint</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#consentStatusEndPoint -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#consentStatusEndPoint">
+        <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
+        <rdfs:label>consentStatusEndPoint</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -282,6 +294,7 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#revokeEndPoint">
         <rdfs:subPropertyOf rdf:resource="https://www.datavillage.me/ontologies/LConsent#url"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
         <rdfs:label>revokeEndPoint</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -527,12 +540,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#isProvidedTo"/>
                 <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#DataProcessor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#source"/>
-                <owl:someValuesFrom rdf:resource="http://semweb.mmlab.be/ns/rml#source"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Consent</rdfs:label>

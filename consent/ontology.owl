@@ -60,14 +60,6 @@
     
 
 
-    <!-- https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration -->
-
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataHistoryMinDuration</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://www.datavillage.me/ontologies/LConsent#dataProcessor -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#dataProcessor">
@@ -118,9 +110,7 @@
 
     <!-- https://www.datavillage.me/ontologies/LConsent#hasDuration -->
 
-    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasDuration">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasMinDuration</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
     
 
 
@@ -176,6 +166,14 @@
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/LConsent#source">
         <rdfs:label>source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/Lconsent#produce -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#produce">
+        <rdfs:label>produce</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -520,12 +518,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#Instant"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasStatus"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Status"/>
             </owl:Restriction>
@@ -565,12 +557,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#dataHistoryDuration"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#forPersonalData"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#PersonalData"/>
             </owl:Restriction>
@@ -603,6 +589,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#juridiction"/>
                 <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/Lconsent#produce"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Behavior"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -798,6 +790,15 @@
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#WebFormHTML">
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Medium"/>
         <rdfs:label>WebFormHTML</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#Behavior -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Behavior">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#PersonalData"/>
+        <rdfs:label>Behavior</rdfs:label>
     </owl:Class>
     
 

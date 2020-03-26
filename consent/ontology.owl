@@ -512,6 +512,12 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#Consent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#createdAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasConsentReceipt"/>
                 <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#ConsentReceipt"/>
             </owl:Restriction>

@@ -77,6 +77,30 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#consent -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#consent">
+        <rdfs:label>consent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#createdAt -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#createdAt">
+        <rdfs:label>createdAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#dataOwner -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#dataOwner">
+        <rdfs:label>dataOwner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#dataProvider -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#dataProvider">
@@ -232,6 +256,25 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#category -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Behavior"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#description -->
+
+    <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Behavior"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#distance -->
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#distance">
@@ -279,8 +322,6 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#endTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/Action"/>
-        <rdfs:label>endTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -353,9 +394,6 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#startTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://schema.org/Action"/>
-        <rdfs:label>startTime</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -607,6 +645,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/LConsent#Consent -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#Consent">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Consent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/LConsent#DataProvider -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/LConsent#DataProvider">
@@ -646,8 +693,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#frequency"/>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#consent"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#Consent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#createdAt"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#dataOwner"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Behavior</rdfs:label>
@@ -808,6 +867,20 @@
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Walk">
         <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Foot"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://www.datavillage.me/ontologies/digital-twin#category">
+        <rdfs:label>category</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

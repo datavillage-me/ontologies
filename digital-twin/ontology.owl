@@ -62,6 +62,22 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#agent -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#agent">
+        <rdfs:label>agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.datavillage.me/ontologies/digital-twin#behaviors -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#behaviors">
+        <rdfs:label>behaviors</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#brand -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#brand">
@@ -425,6 +441,12 @@
 
     <owl:Class rdf:about="http://schema.org/Action">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#agent"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#DataOwner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Action</rdfs:label>
     </owl:Class>
     
@@ -496,6 +518,15 @@
     <owl:Class rdf:about="http://schema.org/Organization">
         <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
         <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
@@ -687,6 +718,12 @@
         <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#behaviors"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#BehaviorData"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#category"/>
                 <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
             </owl:Restriction>
@@ -714,6 +751,15 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/digital-twin#BehaviorData -->
+
+    <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#BehaviorData">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>BehaviorData</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/digital-twin#Bicycle -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#Bicycle">
@@ -735,7 +781,14 @@
     <!-- https://www.datavillage.me/ontologies/digital-twin#DataOwner -->
 
     <owl:Class rdf:about="https://www.datavillage.me/ontologies/digital-twin#DataOwner">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/GConsent#DataSubject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#createdAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#homeLocation"/>

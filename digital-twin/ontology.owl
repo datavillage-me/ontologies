@@ -338,6 +338,9 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#endTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/ConsumeAction"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
     </owl:DatatypeProperty>
     
 
@@ -410,6 +413,9 @@
 
     <owl:DatatypeProperty rdf:about="https://www.datavillage.me/ontologies/digital-twin#startTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://schema.org/ConsumeAction"/>
+        <rdfs:domain rdf:resource="http://schema.org/TravelAction"/>
+        <rdfs:domain rdf:resource="https://www.datavillage.me/ontologies/digital-twin#StayAction"/>
     </owl:DatatypeProperty>
     
 
@@ -500,6 +506,28 @@
     <owl:Class rdf:about="http://schema.org/Car">
         <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
         <rdfs:label>Car</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ConsumeAction -->
+
+    <owl:Class rdf:about="http://schema.org/ConsumeAction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:subClassOf rdf:resource="https://www.datavillage.me/ontologies/digital-twin#PersonalDataGraph"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#category"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/digital-twin#Consumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/digital-twin#object"/>
+                <owl:someValuesFrom rdf:resource="http://schema.org/Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ConsumeAction</rdfs:label>
     </owl:Class>
     
 

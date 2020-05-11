@@ -170,6 +170,14 @@
     
 
 
+    <!-- https://www.datavillage.me/ontologies/Lconsent#forPersonalDataCategory -->
+
+    <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#forPersonalDataCategory">
+        <rdfs:label>forPersonalDataCategory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.datavillage.me/ontologies/Lconsent#produce -->
 
     <owl:ObjectProperty rdf:about="https://www.datavillage.me/ontologies/Lconsent#produce">
@@ -524,6 +532,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasStatus"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Status"/>
             </owl:Restriction>
@@ -581,12 +595,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasDuration"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#hasMedium"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/GConsent#Medium"/>
             </owl:Restriction>
@@ -595,6 +603,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/LConsent#juridiction"/>
                 <owl:someValuesFrom rdf:resource="http://www.geonames.org/ontology#Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.datavillage.me/ontologies/Lconsent#forPersonalDataCategory"/>
+                <owl:someValuesFrom rdf:resource="https://www.datavillage.me/ontologies/LConsent#PersonalDataCategory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
